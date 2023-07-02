@@ -23,6 +23,12 @@ Version 2.5.0
 pip install tensorflow==2.5.0
 ```
 
+### 4. Create tensorflow package
+```bash
+ln -sf ~/.pyenv/versions/3.8.0/lib/python3.8/site-packages/tensorflow/include tensorflow/include
+ln -sf ~/.pyenv/versions/3.8.0/lib/python3.8/site-packages/tensorflow/libtensorflow_framework.so.2 tensorflow/lib/libtensorflow_framework.so.2
+```
+
 ## Bazel build
 ```bash
 cd dtf/custom-op
