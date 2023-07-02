@@ -1,0 +1,6 @@
+2023-07-02 05:00:14.485552: I tensorflow/core/framework/log_memory.cc:34] __LOG_MEMORY__ MemoryLogTensorAllocation { step_id: -6 kernel_name: "Unknown" tensor { dtype: DT_INT32 shape { dim { size: 2 } dim { size: 2 } } allocation_description { requested_bytes: 16 allocated_bytes: 16 allocator_name: "cpu" allocation_id: 1 has_single_reference: true ptr: 94137940503040 } } }
+2023-07-02 05:00:14.485846: I tensorflow/core/framework/op_kernel.cc:1626] Instantiating kernel for node: {{node ZeroOut}} = ZeroOut[](dummy_input)
+2023-07-02 05:00:14.485891: I tensorflow/core/common_runtime/eager/execute.cc:733] Executing op ZeroOut in device /job:localhost/replica:0/task:0/device:CPU:0
+2023-07-02 05:00:14.485943: I tensorflow/core/framework/log_memory.cc:34] __LOG_MEMORY__ MemoryLogTensorAllocation { kernel_name: "ZeroOut" tensor { dtype: DT_INT32 shape { dim { size: 2 } dim { size: 2 } } allocation_description { requested_bytes: 16 allocated_bytes: 16 allocator_name: "cpu" allocation_id: 2 has_single_reference: true ptr: 94137949684992 } } }
+2023-07-02 05:00:14.485988: I tensorflow/core/framework/log_memory.cc:34] __LOG_MEMORY__ MemoryLogTensorDeallocation { allocation_id: 1 allocator_name: "cpu" }
+2023-07-02 05:00:14.486058: I tensorflow/core/framework/log_memory.cc:34] __LOG_MEMORY__ MemoryLogTensorDeallocation { allocation_id: 2 allocator_name: "cpu" }

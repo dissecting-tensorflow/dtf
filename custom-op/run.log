@@ -1,0 +1,1673 @@
+2023-07-02 05:00:08.727969: I tensorflow/core/platform/cloud/gcs_file_system.cc:805] GCS cache max size = 0 ; block size = 67108864 ; max staleness = 0
+2023-07-02 05:00:08.728033: I ./tensorflow/core/platform/cloud/ram_file_block_cache.h:64] GCS file block cache is disabled
+2023-07-02 05:00:08.728044: I tensorflow/core/platform/cloud/gcs_file_system.cc:845] GCS DNS cache is disabled, because GCS_RESOLVE_REFRESH_SECS = 0 (or is not set)
+2023-07-02 05:00:08.728050: I tensorflow/core/platform/cloud/gcs_file_system.cc:875] GCS additional header DISABLED. No environment variable set.
+2023-07-02 05:00:08.732402: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudart.so.11.0
+2023-07-02 05:00:08.763936: I tensorflow/compiler/tf2tensorrt/convert/trt_optimization_pass.cc:268] Constructing a CustomOptimizationPass registration object for TensorRTOptimizer
+2023-07-02 05:00:08.776438: I tensorflow/core/platform/cloud/gcs_file_system.cc:805] GCS cache max size = 0 ; block size = 67108864 ; max staleness = 0
+2023-07-02 05:00:08.776479: I ./tensorflow/core/platform/cloud/ram_file_block_cache.h:64] GCS file block cache is disabled
+2023-07-02 05:00:08.776487: I tensorflow/core/platform/cloud/gcs_file_system.cc:845] GCS DNS cache is disabled, because GCS_RESOLVE_REFRESH_SECS = 0 (or is not set)
+2023-07-02 05:00:08.776493: I tensorflow/core/platform/cloud/gcs_file_system.cc:875] GCS additional header DISABLED. No environment variable set.
+2023-07-02 05:00:09.745660: I tensorflow/compiler/xla/parse_flags_from_env.cc:199] For env var TF_XLA_FLAGS found arguments:
+2023-07-02 05:00:09.745705: I tensorflow/compiler/xla/parse_flags_from_env.cc:201]   argv[0] = <argv[0]>
+2023-07-02 05:00:09.745715: I tensorflow/compiler/jit/xla_cpu_device.cc:41] Not creating XLA devices, tf_xla_enable_xla_devices not set
+2023-07-02 05:00:09.745721: I tensorflow/compiler/jit/xla_gpu_device.cc:69] Not creating XLA devices, tf_xla_enable_xla_devices not set
+2023-07-02 05:00:09.746487: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcuda.so.1
+2023-07-02 05:00:09.792693: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:252] found DLL info with name: /lib/x86_64-linux-gnu/libcuda.so.1
+2023-07-02 05:00:09.792733: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:257] found DLL info with resolved path: /usr/lib/x86_64-linux-gnu/libcuda.so.450.51.05
+2023-07-02 05:00:09.792755: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:106] version string "450.51.05" made value 450.51.5
+2023-07-02 05:00:09.792779: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:907] trying to read NUMA node for device ordinal: 0
+2023-07-02 05:00:09.793808: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 0 with properties: 
+pciBusID: 0000:3d:00.0 name: Tesla T4 computeCapability: 7.5
+coreClock: 1.59GHz coreCount: 40 deviceMemorySize: 14.75GiB deviceMemoryBandwidth: 298.08GiB/s
+2023-07-02 05:00:09.793843: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:252] found DLL info with name: /lib/x86_64-linux-gnu/libcuda.so.1
+2023-07-02 05:00:09.793856: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:257] found DLL info with resolved path: /usr/lib/x86_64-linux-gnu/libcuda.so.450.51.05
+2023-07-02 05:00:09.793865: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:106] version string "450.51.05" made value 450.51.5
+2023-07-02 05:00:09.793874: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:907] trying to read NUMA node for device ordinal: 1
+2023-07-02 05:00:09.794906: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 1 with properties: 
+pciBusID: 0000:3e:00.0 name: Tesla T4 computeCapability: 7.5
+coreClock: 1.59GHz coreCount: 40 deviceMemorySize: 14.75GiB deviceMemoryBandwidth: 298.08GiB/s
+2023-07-02 05:00:09.794933: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:252] found DLL info with name: /lib/x86_64-linux-gnu/libcuda.so.1
+2023-07-02 05:00:09.794945: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:257] found DLL info with resolved path: /usr/lib/x86_64-linux-gnu/libcuda.so.450.51.05
+2023-07-02 05:00:09.794962: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:106] version string "450.51.05" made value 450.51.5
+2023-07-02 05:00:09.794970: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:907] trying to read NUMA node for device ordinal: 2
+2023-07-02 05:00:09.796212: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 2 with properties: 
+pciBusID: 0000:40:00.0 name: Tesla T4 computeCapability: 7.5
+coreClock: 1.59GHz coreCount: 40 deviceMemorySize: 14.75GiB deviceMemoryBandwidth: 298.08GiB/s
+2023-07-02 05:00:09.796238: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:252] found DLL info with name: /lib/x86_64-linux-gnu/libcuda.so.1
+2023-07-02 05:00:09.796248: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:257] found DLL info with resolved path: /usr/lib/x86_64-linux-gnu/libcuda.so.450.51.05
+2023-07-02 05:00:09.796256: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:106] version string "450.51.05" made value 450.51.5
+2023-07-02 05:00:09.796265: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:907] trying to read NUMA node for device ordinal: 3
+2023-07-02 05:00:09.797232: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 3 with properties: 
+pciBusID: 0000:41:00.0 name: Tesla T4 computeCapability: 7.5
+coreClock: 1.59GHz coreCount: 40 deviceMemorySize: 14.75GiB deviceMemoryBandwidth: 298.08GiB/s
+2023-07-02 05:00:09.797257: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:252] found DLL info with name: /lib/x86_64-linux-gnu/libcuda.so.1
+2023-07-02 05:00:09.797268: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:257] found DLL info with resolved path: /usr/lib/x86_64-linux-gnu/libcuda.so.450.51.05
+2023-07-02 05:00:09.797274: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:106] version string "450.51.05" made value 450.51.5
+2023-07-02 05:00:09.797282: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:907] trying to read NUMA node for device ordinal: 4
+2023-07-02 05:00:09.798511: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 4 with properties: 
+pciBusID: 0000:b1:00.0 name: Tesla T4 computeCapability: 7.5
+coreClock: 1.59GHz coreCount: 40 deviceMemorySize: 14.75GiB deviceMemoryBandwidth: 298.08GiB/s
+2023-07-02 05:00:09.798534: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:252] found DLL info with name: /lib/x86_64-linux-gnu/libcuda.so.1
+2023-07-02 05:00:09.798544: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:257] found DLL info with resolved path: /usr/lib/x86_64-linux-gnu/libcuda.so.450.51.05
+2023-07-02 05:00:09.798550: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:106] version string "450.51.05" made value 450.51.5
+2023-07-02 05:00:09.798559: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:907] trying to read NUMA node for device ordinal: 5
+2023-07-02 05:00:09.799706: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 5 with properties: 
+pciBusID: 0000:b2:00.0 name: Tesla T4 computeCapability: 7.5
+coreClock: 1.59GHz coreCount: 40 deviceMemorySize: 14.75GiB deviceMemoryBandwidth: 298.08GiB/s
+2023-07-02 05:00:09.799727: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:252] found DLL info with name: /lib/x86_64-linux-gnu/libcuda.so.1
+2023-07-02 05:00:09.799737: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:257] found DLL info with resolved path: /usr/lib/x86_64-linux-gnu/libcuda.so.450.51.05
+2023-07-02 05:00:09.799744: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:106] version string "450.51.05" made value 450.51.5
+2023-07-02 05:00:09.799752: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:907] trying to read NUMA node for device ordinal: 6
+2023-07-02 05:00:09.800897: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 6 with properties: 
+pciBusID: 0000:b4:00.0 name: Tesla T4 computeCapability: 7.5
+coreClock: 1.59GHz coreCount: 40 deviceMemorySize: 14.75GiB deviceMemoryBandwidth: 298.08GiB/s
+2023-07-02 05:00:09.800919: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:252] found DLL info with name: /lib/x86_64-linux-gnu/libcuda.so.1
+2023-07-02 05:00:09.800937: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:257] found DLL info with resolved path: /usr/lib/x86_64-linux-gnu/libcuda.so.450.51.05
+2023-07-02 05:00:09.800944: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:106] version string "450.51.05" made value 450.51.5
+2023-07-02 05:00:09.800952: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:907] trying to read NUMA node for device ordinal: 7
+2023-07-02 05:00:09.802178: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 7 with properties: 
+pciBusID: 0000:b5:00.0 name: Tesla T4 computeCapability: 7.5
+coreClock: 1.59GHz coreCount: 40 deviceMemorySize: 14.75GiB deviceMemoryBandwidth: 298.08GiB/s
+2023-07-02 05:00:09.802210: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudart.so.11.0
+2023-07-02 05:00:09.804646: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcublas.so.11
+2023-07-02 05:00:09.804702: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcublasLt.so.11
+2023-07-02 05:00:09.805780: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcufft.so.10
+2023-07-02 05:00:09.806035: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcurand.so.10
+2023-07-02 05:00:09.808815: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcusolver.so.11
+2023-07-02 05:00:09.809440: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcusparse.so.11
+2023-07-02 05:00:09.809565: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudnn.so.8
+2023-07-02 05:00:09.809604: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:252] found DLL info with name: /lib/x86_64-linux-gnu/libcuda.so.1
+2023-07-02 05:00:09.809619: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:257] found DLL info with resolved path: /usr/lib/x86_64-linux-gnu/libcuda.so.450.51.05
+2023-07-02 05:00:09.809630: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:106] version string "450.51.05" made value 450.51.5
+2023-07-02 05:00:09.809642: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:907] trying to read NUMA node for device ordinal: 0
+2023-07-02 05:00:09.810669: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:252] found DLL info with name: /lib/x86_64-linux-gnu/libcuda.so.1
+2023-07-02 05:00:09.810688: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:257] found DLL info with resolved path: /usr/lib/x86_64-linux-gnu/libcuda.so.450.51.05
+2023-07-02 05:00:09.810696: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:106] version string "450.51.05" made value 450.51.5
+2023-07-02 05:00:09.810705: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:907] trying to read NUMA node for device ordinal: 1
+2023-07-02 05:00:09.811724: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:252] found DLL info with name: /lib/x86_64-linux-gnu/libcuda.so.1
+2023-07-02 05:00:09.811740: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:257] found DLL info with resolved path: /usr/lib/x86_64-linux-gnu/libcuda.so.450.51.05
+2023-07-02 05:00:09.811747: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:106] version string "450.51.05" made value 450.51.5
+2023-07-02 05:00:09.811754: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:907] trying to read NUMA node for device ordinal: 2
+2023-07-02 05:00:09.812978: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:252] found DLL info with name: /lib/x86_64-linux-gnu/libcuda.so.1
+2023-07-02 05:00:09.812994: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:257] found DLL info with resolved path: /usr/lib/x86_64-linux-gnu/libcuda.so.450.51.05
+2023-07-02 05:00:09.813001: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:106] version string "450.51.05" made value 450.51.5
+2023-07-02 05:00:09.813015: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:907] trying to read NUMA node for device ordinal: 3
+2023-07-02 05:00:09.813983: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:252] found DLL info with name: /lib/x86_64-linux-gnu/libcuda.so.1
+2023-07-02 05:00:09.813998: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:257] found DLL info with resolved path: /usr/lib/x86_64-linux-gnu/libcuda.so.450.51.05
+2023-07-02 05:00:09.814005: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:106] version string "450.51.05" made value 450.51.5
+2023-07-02 05:00:09.814013: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:907] trying to read NUMA node for device ordinal: 4
+2023-07-02 05:00:09.815247: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:252] found DLL info with name: /lib/x86_64-linux-gnu/libcuda.so.1
+2023-07-02 05:00:09.815263: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:257] found DLL info with resolved path: /usr/lib/x86_64-linux-gnu/libcuda.so.450.51.05
+2023-07-02 05:00:09.815270: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:106] version string "450.51.05" made value 450.51.5
+2023-07-02 05:00:09.815276: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:907] trying to read NUMA node for device ordinal: 5
+2023-07-02 05:00:09.816502: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:252] found DLL info with name: /lib/x86_64-linux-gnu/libcuda.so.1
+2023-07-02 05:00:09.816517: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:257] found DLL info with resolved path: /usr/lib/x86_64-linux-gnu/libcuda.so.450.51.05
+2023-07-02 05:00:09.816524: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:106] version string "450.51.05" made value 450.51.5
+2023-07-02 05:00:09.816530: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:907] trying to read NUMA node for device ordinal: 6
+2023-07-02 05:00:09.817753: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:252] found DLL info with name: /lib/x86_64-linux-gnu/libcuda.so.1
+2023-07-02 05:00:09.817768: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:257] found DLL info with resolved path: /usr/lib/x86_64-linux-gnu/libcuda.so.450.51.05
+2023-07-02 05:00:09.817775: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:106] version string "450.51.05" made value 450.51.5
+2023-07-02 05:00:09.817782: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:907] trying to read NUMA node for device ordinal: 7
+2023-07-02 05:00:09.819005: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:252] found DLL info with name: /lib/x86_64-linux-gnu/libcuda.so.1
+2023-07-02 05:00:09.819019: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:257] found DLL info with resolved path: /usr/lib/x86_64-linux-gnu/libcuda.so.450.51.05
+2023-07-02 05:00:09.819026: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:106] version string "450.51.05" made value 450.51.5
+2023-07-02 05:00:09.819033: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:907] trying to read NUMA node for device ordinal: 0
+2023-07-02 05:00:09.820006: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:252] found DLL info with name: /lib/x86_64-linux-gnu/libcuda.so.1
+2023-07-02 05:00:09.820021: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:257] found DLL info with resolved path: /usr/lib/x86_64-linux-gnu/libcuda.so.450.51.05
+2023-07-02 05:00:09.820028: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:106] version string "450.51.05" made value 450.51.5
+2023-07-02 05:00:09.820035: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:907] trying to read NUMA node for device ordinal: 1
+2023-07-02 05:00:09.821038: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:252] found DLL info with name: /lib/x86_64-linux-gnu/libcuda.so.1
+2023-07-02 05:00:09.821053: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:257] found DLL info with resolved path: /usr/lib/x86_64-linux-gnu/libcuda.so.450.51.05
+2023-07-02 05:00:09.821060: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:106] version string "450.51.05" made value 450.51.5
+2023-07-02 05:00:09.821073: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:907] trying to read NUMA node for device ordinal: 2
+2023-07-02 05:00:09.822305: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:252] found DLL info with name: /lib/x86_64-linux-gnu/libcuda.so.1
+2023-07-02 05:00:09.822320: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:257] found DLL info with resolved path: /usr/lib/x86_64-linux-gnu/libcuda.so.450.51.05
+2023-07-02 05:00:09.822327: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:106] version string "450.51.05" made value 450.51.5
+2023-07-02 05:00:09.822334: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:907] trying to read NUMA node for device ordinal: 3
+2023-07-02 05:00:09.823292: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:252] found DLL info with name: /lib/x86_64-linux-gnu/libcuda.so.1
+2023-07-02 05:00:09.823308: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:257] found DLL info with resolved path: /usr/lib/x86_64-linux-gnu/libcuda.so.450.51.05
+2023-07-02 05:00:09.823314: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:106] version string "450.51.05" made value 450.51.5
+2023-07-02 05:00:09.823321: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:907] trying to read NUMA node for device ordinal: 4
+2023-07-02 05:00:09.824544: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:252] found DLL info with name: /lib/x86_64-linux-gnu/libcuda.so.1
+2023-07-02 05:00:09.824560: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:257] found DLL info with resolved path: /usr/lib/x86_64-linux-gnu/libcuda.so.450.51.05
+2023-07-02 05:00:09.824566: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:106] version string "450.51.05" made value 450.51.5
+2023-07-02 05:00:09.824573: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:907] trying to read NUMA node for device ordinal: 5
+2023-07-02 05:00:09.825804: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:252] found DLL info with name: /lib/x86_64-linux-gnu/libcuda.so.1
+2023-07-02 05:00:09.825819: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:257] found DLL info with resolved path: /usr/lib/x86_64-linux-gnu/libcuda.so.450.51.05
+2023-07-02 05:00:09.825825: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:106] version string "450.51.05" made value 450.51.5
+2023-07-02 05:00:09.825832: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:907] trying to read NUMA node for device ordinal: 6
+2023-07-02 05:00:09.827048: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:252] found DLL info with name: /lib/x86_64-linux-gnu/libcuda.so.1
+2023-07-02 05:00:09.827063: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:257] found DLL info with resolved path: /usr/lib/x86_64-linux-gnu/libcuda.so.450.51.05
+2023-07-02 05:00:09.827069: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:106] version string "450.51.05" made value 450.51.5
+2023-07-02 05:00:09.827076: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:907] trying to read NUMA node for device ordinal: 7
+2023-07-02 05:00:09.828225: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1871] Adding visible gpu devices: 0, 1, 2, 3, 4, 5, 6, 7
+2023-07-02 05:00:09.828522: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-07-02 05:00:09.832287: I tensorflow/compiler/jit/xla_cpu_device.cc:54] Not creating XLA devices, tf_xla_enable_xla_devices not set
+2023-07-02 05:00:09.832324: I tensorflow/compiler/jit/xla_gpu_device.cc:99] Not creating XLA devices, tf_xla_enable_xla_devices not set
+2023-07-02 05:00:09.832373: I tensorflow/stream_executor/executor_cache.cc:54] building executor
+2023-07-02 05:00:09.914220: I tensorflow/stream_executor/cuda/cuda_driver.cc:449] created or reused context 0x559ddc39b4b0 for this thread
+2023-07-02 05:00:09.914275: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 0
+2023-07-02 05:00:09.914286: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 0
+2023-07-02 05:00:09.914294: I tensorflow/stream_executor/executor_cache.cc:54] building executor
+2023-07-02 05:00:09.997772: I tensorflow/stream_executor/cuda/cuda_driver.cc:449] created or reused context 0x559ddc3b3d80 for this thread
+2023-07-02 05:00:09.997819: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 1
+2023-07-02 05:00:09.997843: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 2
+2023-07-02 05:00:09.997864: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 1
+2023-07-02 05:00:09.997976: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 0
+2023-07-02 05:00:09.997988: I tensorflow/stream_executor/executor_cache.cc:54] building executor
+2023-07-02 05:00:10.078323: I tensorflow/stream_executor/cuda/cuda_driver.cc:449] created or reused context 0x559ddc3db100 for this thread
+2023-07-02 05:00:10.078370: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 1
+2023-07-02 05:00:10.078379: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 3
+2023-07-02 05:00:10.078387: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 1
+2023-07-02 05:00:10.078496: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 0
+2023-07-02 05:00:10.078508: I tensorflow/stream_executor/executor_cache.cc:54] building executor
+2023-07-02 05:00:10.167084: I tensorflow/stream_executor/cuda/cuda_driver.cc:449] created or reused context 0x559ddc3e1700 for this thread
+2023-07-02 05:00:10.167130: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 1
+2023-07-02 05:00:10.167139: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 4
+2023-07-02 05:00:10.167147: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 1
+2023-07-02 05:00:10.167268: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 0
+2023-07-02 05:00:10.167281: I tensorflow/stream_executor/executor_cache.cc:54] building executor
+2023-07-02 05:00:10.260961: I tensorflow/stream_executor/cuda/cuda_driver.cc:449] created or reused context 0x559ddc3e7d00 for this thread
+2023-07-02 05:00:10.261006: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 1
+2023-07-02 05:00:10.261014: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 5
+2023-07-02 05:00:10.261023: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 1
+2023-07-02 05:00:10.261157: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 0
+2023-07-02 05:00:10.261169: I tensorflow/stream_executor/executor_cache.cc:54] building executor
+2023-07-02 05:00:10.360341: I tensorflow/stream_executor/cuda/cuda_driver.cc:449] created or reused context 0x559ddc3ee300 for this thread
+2023-07-02 05:00:10.360390: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 1
+2023-07-02 05:00:10.360399: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 6
+2023-07-02 05:00:10.360408: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 1
+2023-07-02 05:00:10.360547: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 0
+2023-07-02 05:00:10.360558: I tensorflow/stream_executor/executor_cache.cc:54] building executor
+2023-07-02 05:00:10.465919: I tensorflow/stream_executor/cuda/cuda_driver.cc:449] created or reused context 0x559ddc3f4900 for this thread
+2023-07-02 05:00:10.465969: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 1
+2023-07-02 05:00:10.465985: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 7
+2023-07-02 05:00:10.465994: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 1
+2023-07-02 05:00:10.466139: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 0
+2023-07-02 05:00:10.466151: I tensorflow/stream_executor/executor_cache.cc:54] building executor
+2023-07-02 05:00:10.576817: I tensorflow/stream_executor/cuda/cuda_driver.cc:449] created or reused context 0x559ddc3faf00 for this thread
+2023-07-02 05:00:10.576861: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 1
+2023-07-02 05:00:10.576870: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 8
+2023-07-02 05:00:10.576878: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 1
+2023-07-02 05:00:10.577023: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 1
+2023-07-02 05:00:10.577033: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 0
+2023-07-02 05:00:10.577039: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 2
+2023-07-02 05:00:10.577044: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 1
+2023-07-02 05:00:10.577050: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 2
+2023-07-02 05:00:10.577057: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 1
+2023-07-02 05:00:10.577062: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 1
+2023-07-02 05:00:10.577068: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 1
+2023-07-02 05:00:10.577072: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 2
+2023-07-02 05:00:10.577077: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 2
+2023-07-02 05:00:10.577082: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 3
+2023-07-02 05:00:10.577087: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 2
+2023-07-02 05:00:10.577179: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 1
+2023-07-02 05:00:10.577195: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 3
+2023-07-02 05:00:10.577200: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 2
+2023-07-02 05:00:10.577205: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 4
+2023-07-02 05:00:10.577210: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 2
+2023-07-02 05:00:10.577291: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 1
+2023-07-02 05:00:10.577300: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 4
+2023-07-02 05:00:10.577306: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 2
+2023-07-02 05:00:10.577311: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 5
+2023-07-02 05:00:10.577316: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 2
+2023-07-02 05:00:10.577398: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 1
+2023-07-02 05:00:10.577407: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 5
+2023-07-02 05:00:10.577413: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 2
+2023-07-02 05:00:10.577418: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 6
+2023-07-02 05:00:10.577423: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 2
+2023-07-02 05:00:10.577514: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 1
+2023-07-02 05:00:10.577524: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 6
+2023-07-02 05:00:10.577529: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 2
+2023-07-02 05:00:10.577534: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 7
+2023-07-02 05:00:10.577539: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 2
+2023-07-02 05:00:10.577620: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 1
+2023-07-02 05:00:10.577628: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 7
+2023-07-02 05:00:10.577634: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 2
+2023-07-02 05:00:10.577638: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 8
+2023-07-02 05:00:10.577643: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 2
+2023-07-02 05:00:10.577722: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 2
+2023-07-02 05:00:10.577731: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 0
+2023-07-02 05:00:10.577736: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 3
+2023-07-02 05:00:10.577741: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 1
+2023-07-02 05:00:10.577746: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 3
+2023-07-02 05:00:10.577753: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 2
+2023-07-02 05:00:10.577757: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 1
+2023-07-02 05:00:10.577763: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 3
+2023-07-02 05:00:10.577768: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 2
+2023-07-02 05:00:10.577773: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 3
+2023-07-02 05:00:10.577779: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 2
+2023-07-02 05:00:10.577784: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 2
+2023-07-02 05:00:10.577790: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 2
+2023-07-02 05:00:10.577795: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 3
+2023-07-02 05:00:10.577799: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 3
+2023-07-02 05:00:10.577804: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 4
+2023-07-02 05:00:10.577809: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 3
+2023-07-02 05:00:10.577886: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 2
+2023-07-02 05:00:10.577895: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 4
+2023-07-02 05:00:10.577900: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 3
+2023-07-02 05:00:10.577905: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 5
+2023-07-02 05:00:10.577910: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 3
+2023-07-02 05:00:10.577988: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 2
+2023-07-02 05:00:10.577997: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 5
+2023-07-02 05:00:10.578002: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 3
+2023-07-02 05:00:10.578010: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 6
+2023-07-02 05:00:10.578016: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 3
+2023-07-02 05:00:10.578096: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 2
+2023-07-02 05:00:10.578104: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 6
+2023-07-02 05:00:10.578109: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 3
+2023-07-02 05:00:10.578114: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 7
+2023-07-02 05:00:10.578119: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 3
+2023-07-02 05:00:10.578202: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 2
+2023-07-02 05:00:10.578212: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 7
+2023-07-02 05:00:10.578217: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 3
+2023-07-02 05:00:10.578222: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 8
+2023-07-02 05:00:10.578227: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 3
+2023-07-02 05:00:10.578306: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 3
+2023-07-02 05:00:10.578314: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 0
+2023-07-02 05:00:10.578319: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 4
+2023-07-02 05:00:10.578325: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 1
+2023-07-02 05:00:10.578330: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 4
+2023-07-02 05:00:10.578336: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 3
+2023-07-02 05:00:10.578341: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 1
+2023-07-02 05:00:10.578346: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 4
+2023-07-02 05:00:10.578351: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 2
+2023-07-02 05:00:10.578356: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 4
+2023-07-02 05:00:10.578363: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 3
+2023-07-02 05:00:10.578367: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 2
+2023-07-02 05:00:10.578373: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 4
+2023-07-02 05:00:10.578378: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 3
+2023-07-02 05:00:10.578382: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 4
+2023-07-02 05:00:10.578389: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 3
+2023-07-02 05:00:10.578393: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 3
+2023-07-02 05:00:10.578399: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 3
+2023-07-02 05:00:10.578404: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 4
+2023-07-02 05:00:10.578409: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 4
+2023-07-02 05:00:10.578413: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 5
+2023-07-02 05:00:10.578418: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 4
+2023-07-02 05:00:10.578500: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 3
+2023-07-02 05:00:10.578513: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 5
+2023-07-02 05:00:10.578519: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 4
+2023-07-02 05:00:10.578523: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 6
+2023-07-02 05:00:10.578529: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 4
+2023-07-02 05:00:10.578611: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 3
+2023-07-02 05:00:10.578620: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 6
+2023-07-02 05:00:10.578625: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 4
+2023-07-02 05:00:10.578630: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 7
+2023-07-02 05:00:10.578635: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 4
+2023-07-02 05:00:10.578715: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 3
+2023-07-02 05:00:10.578723: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 7
+2023-07-02 05:00:10.578728: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 4
+2023-07-02 05:00:10.578733: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 8
+2023-07-02 05:00:10.578738: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 4
+2023-07-02 05:00:10.578820: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 4
+2023-07-02 05:00:10.578829: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 0
+2023-07-02 05:00:10.578835: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 5
+2023-07-02 05:00:10.578841: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 1
+2023-07-02 05:00:10.578846: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 5
+2023-07-02 05:00:10.578852: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 4
+2023-07-02 05:00:10.578857: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 1
+2023-07-02 05:00:10.578863: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 5
+2023-07-02 05:00:10.578868: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 2
+2023-07-02 05:00:10.578873: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 5
+2023-07-02 05:00:10.578879: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 4
+2023-07-02 05:00:10.578884: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 2
+2023-07-02 05:00:10.578889: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 5
+2023-07-02 05:00:10.578894: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 3
+2023-07-02 05:00:10.578899: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 5
+2023-07-02 05:00:10.578905: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 4
+2023-07-02 05:00:10.578910: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 3
+2023-07-02 05:00:10.578915: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 5
+2023-07-02 05:00:10.578920: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 4
+2023-07-02 05:00:10.578925: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 5
+2023-07-02 05:00:10.578931: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 4
+2023-07-02 05:00:10.578941: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 4
+2023-07-02 05:00:10.578946: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 4
+2023-07-02 05:00:10.578951: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 5
+2023-07-02 05:00:10.578955: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 5
+2023-07-02 05:00:10.578960: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 6
+2023-07-02 05:00:10.578966: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 5
+2023-07-02 05:00:10.579050: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 4
+2023-07-02 05:00:10.579059: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 6
+2023-07-02 05:00:10.579064: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 5
+2023-07-02 05:00:10.579069: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 7
+2023-07-02 05:00:10.579074: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 5
+2023-07-02 05:00:10.579156: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 4
+2023-07-02 05:00:10.579165: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 7
+2023-07-02 05:00:10.579170: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 5
+2023-07-02 05:00:10.579175: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 8
+2023-07-02 05:00:10.579183: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 5
+2023-07-02 05:00:10.579265: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 5
+2023-07-02 05:00:10.579274: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 0
+2023-07-02 05:00:10.579279: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 6
+2023-07-02 05:00:10.579285: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 1
+2023-07-02 05:00:10.579290: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 6
+2023-07-02 05:00:10.579297: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 5
+2023-07-02 05:00:10.579301: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 1
+2023-07-02 05:00:10.579307: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 6
+2023-07-02 05:00:10.579311: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 2
+2023-07-02 05:00:10.579316: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 6
+2023-07-02 05:00:10.579323: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 5
+2023-07-02 05:00:10.579328: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 2
+2023-07-02 05:00:10.579333: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 6
+2023-07-02 05:00:10.579338: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 3
+2023-07-02 05:00:10.579343: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 6
+2023-07-02 05:00:10.579350: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 5
+2023-07-02 05:00:10.579354: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 3
+2023-07-02 05:00:10.579360: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 6
+2023-07-02 05:00:10.579365: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 4
+2023-07-02 05:00:10.579370: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 6
+2023-07-02 05:00:10.579380: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 5
+2023-07-02 05:00:10.579386: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 4
+2023-07-02 05:00:10.579391: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 6
+2023-07-02 05:00:10.579396: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 5
+2023-07-02 05:00:10.579401: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 6
+2023-07-02 05:00:10.579407: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 5
+2023-07-02 05:00:10.579412: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 5
+2023-07-02 05:00:10.579417: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 5
+2023-07-02 05:00:10.579422: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 6
+2023-07-02 05:00:10.579426: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 6
+2023-07-02 05:00:10.579431: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 7
+2023-07-02 05:00:10.579437: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 6
+2023-07-02 05:00:10.579516: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 5
+2023-07-02 05:00:10.579525: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 7
+2023-07-02 05:00:10.579531: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 6
+2023-07-02 05:00:10.579535: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 8
+2023-07-02 05:00:10.579540: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 6
+2023-07-02 05:00:10.579617: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 6
+2023-07-02 05:00:10.579626: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 0
+2023-07-02 05:00:10.579631: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 7
+2023-07-02 05:00:10.579635: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 1
+2023-07-02 05:00:10.579640: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 7
+2023-07-02 05:00:10.579647: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 6
+2023-07-02 05:00:10.579652: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 1
+2023-07-02 05:00:10.579657: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 7
+2023-07-02 05:00:10.579662: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 2
+2023-07-02 05:00:10.579667: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 7
+2023-07-02 05:00:10.579673: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 6
+2023-07-02 05:00:10.579678: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 2
+2023-07-02 05:00:10.579684: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 7
+2023-07-02 05:00:10.579689: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 3
+2023-07-02 05:00:10.579693: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 7
+2023-07-02 05:00:10.579700: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 6
+2023-07-02 05:00:10.579705: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 3
+2023-07-02 05:00:10.579710: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 7
+2023-07-02 05:00:10.579728: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 4
+2023-07-02 05:00:10.579735: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 7
+2023-07-02 05:00:10.579742: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 6
+2023-07-02 05:00:10.579747: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 4
+2023-07-02 05:00:10.579752: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 7
+2023-07-02 05:00:10.579756: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 5
+2023-07-02 05:00:10.579762: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 7
+2023-07-02 05:00:10.579769: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 6
+2023-07-02 05:00:10.579774: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 5
+2023-07-02 05:00:10.579778: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 7
+2023-07-02 05:00:10.579784: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 6
+2023-07-02 05:00:10.579790: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 7
+2023-07-02 05:00:10.579796: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 6
+2023-07-02 05:00:10.579800: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 6
+2023-07-02 05:00:10.579805: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 6
+2023-07-02 05:00:10.579810: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 7
+2023-07-02 05:00:10.579815: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 7
+2023-07-02 05:00:10.579820: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 8
+2023-07-02 05:00:10.579825: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 7
+2023-07-02 05:00:10.579905: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 7
+2023-07-02 05:00:10.579913: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 0
+2023-07-02 05:00:10.579919: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 8
+2023-07-02 05:00:10.579924: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 1
+2023-07-02 05:00:10.579929: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 8
+2023-07-02 05:00:10.579935: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 7
+2023-07-02 05:00:10.579940: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 1
+2023-07-02 05:00:10.579945: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 8
+2023-07-02 05:00:10.579950: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 2
+2023-07-02 05:00:10.579955: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 8
+2023-07-02 05:00:10.579962: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 7
+2023-07-02 05:00:10.579966: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 2
+2023-07-02 05:00:10.579972: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 8
+2023-07-02 05:00:10.579977: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 3
+2023-07-02 05:00:10.579982: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 8
+2023-07-02 05:00:10.579988: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 7
+2023-07-02 05:00:10.579998: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 3
+2023-07-02 05:00:10.580002: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 8
+2023-07-02 05:00:10.580007: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 4
+2023-07-02 05:00:10.580012: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 8
+2023-07-02 05:00:10.580018: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 7
+2023-07-02 05:00:10.580024: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 4
+2023-07-02 05:00:10.580029: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 8
+2023-07-02 05:00:10.580033: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 5
+2023-07-02 05:00:10.580038: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 8
+2023-07-02 05:00:10.580044: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 7
+2023-07-02 05:00:10.580050: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 5
+2023-07-02 05:00:10.580055: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 8
+2023-07-02 05:00:10.580059: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 6
+2023-07-02 05:00:10.580064: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 8
+2023-07-02 05:00:10.580070: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 7
+2023-07-02 05:00:10.580076: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 6
+2023-07-02 05:00:10.580081: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 8
+2023-07-02 05:00:10.580085: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 7
+2023-07-02 05:00:10.580090: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 8
+2023-07-02 05:00:10.580096: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 7
+2023-07-02 05:00:10.580102: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 7
+2023-07-02 05:00:10.580175: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:252] found DLL info with name: /lib/x86_64-linux-gnu/libcuda.so.1
+2023-07-02 05:00:10.580199: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:257] found DLL info with resolved path: /usr/lib/x86_64-linux-gnu/libcuda.so.450.51.05
+2023-07-02 05:00:10.580211: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:106] version string "450.51.05" made value 450.51.5
+2023-07-02 05:00:10.580223: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:907] trying to read NUMA node for device ordinal: 0
+2023-07-02 05:00:10.581241: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 0 with properties: 
+pciBusID: 0000:3d:00.0 name: Tesla T4 computeCapability: 7.5
+coreClock: 1.59GHz coreCount: 40 deviceMemorySize: 14.75GiB deviceMemoryBandwidth: 298.08GiB/s
+2023-07-02 05:00:10.581286: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:252] found DLL info with name: /lib/x86_64-linux-gnu/libcuda.so.1
+2023-07-02 05:00:10.581300: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:257] found DLL info with resolved path: /usr/lib/x86_64-linux-gnu/libcuda.so.450.51.05
+2023-07-02 05:00:10.581308: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:106] version string "450.51.05" made value 450.51.5
+2023-07-02 05:00:10.581316: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:907] trying to read NUMA node for device ordinal: 1
+2023-07-02 05:00:10.582322: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 1 with properties: 
+pciBusID: 0000:3e:00.0 name: Tesla T4 computeCapability: 7.5
+coreClock: 1.59GHz coreCount: 40 deviceMemorySize: 14.75GiB deviceMemoryBandwidth: 298.08GiB/s
+2023-07-02 05:00:10.582360: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:252] found DLL info with name: /lib/x86_64-linux-gnu/libcuda.so.1
+2023-07-02 05:00:10.582371: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:257] found DLL info with resolved path: /usr/lib/x86_64-linux-gnu/libcuda.so.450.51.05
+2023-07-02 05:00:10.582379: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:106] version string "450.51.05" made value 450.51.5
+2023-07-02 05:00:10.582387: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:907] trying to read NUMA node for device ordinal: 2
+2023-07-02 05:00:10.583604: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 2 with properties: 
+pciBusID: 0000:40:00.0 name: Tesla T4 computeCapability: 7.5
+coreClock: 1.59GHz coreCount: 40 deviceMemorySize: 14.75GiB deviceMemoryBandwidth: 298.08GiB/s
+2023-07-02 05:00:10.583631: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:252] found DLL info with name: /lib/x86_64-linux-gnu/libcuda.so.1
+2023-07-02 05:00:10.583642: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:257] found DLL info with resolved path: /usr/lib/x86_64-linux-gnu/libcuda.so.450.51.05
+2023-07-02 05:00:10.583649: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:106] version string "450.51.05" made value 450.51.5
+2023-07-02 05:00:10.583656: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:907] trying to read NUMA node for device ordinal: 3
+2023-07-02 05:00:10.584611: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 3 with properties: 
+pciBusID: 0000:41:00.0 name: Tesla T4 computeCapability: 7.5
+coreClock: 1.59GHz coreCount: 40 deviceMemorySize: 14.75GiB deviceMemoryBandwidth: 298.08GiB/s
+2023-07-02 05:00:10.584636: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:252] found DLL info with name: /lib/x86_64-linux-gnu/libcuda.so.1
+2023-07-02 05:00:10.584646: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:257] found DLL info with resolved path: /usr/lib/x86_64-linux-gnu/libcuda.so.450.51.05
+2023-07-02 05:00:10.584653: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:106] version string "450.51.05" made value 450.51.5
+2023-07-02 05:00:10.584661: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:907] trying to read NUMA node for device ordinal: 4
+2023-07-02 05:00:10.585879: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 4 with properties: 
+pciBusID: 0000:b1:00.0 name: Tesla T4 computeCapability: 7.5
+coreClock: 1.59GHz coreCount: 40 deviceMemorySize: 14.75GiB deviceMemoryBandwidth: 298.08GiB/s
+2023-07-02 05:00:10.585904: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:252] found DLL info with name: /lib/x86_64-linux-gnu/libcuda.so.1
+2023-07-02 05:00:10.585914: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:257] found DLL info with resolved path: /usr/lib/x86_64-linux-gnu/libcuda.so.450.51.05
+2023-07-02 05:00:10.585920: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:106] version string "450.51.05" made value 450.51.5
+2023-07-02 05:00:10.585928: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:907] trying to read NUMA node for device ordinal: 5
+2023-07-02 05:00:10.587150: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 5 with properties: 
+pciBusID: 0000:b2:00.0 name: Tesla T4 computeCapability: 7.5
+coreClock: 1.59GHz coreCount: 40 deviceMemorySize: 14.75GiB deviceMemoryBandwidth: 298.08GiB/s
+2023-07-02 05:00:10.587173: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:252] found DLL info with name: /lib/x86_64-linux-gnu/libcuda.so.1
+2023-07-02 05:00:10.587187: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:257] found DLL info with resolved path: /usr/lib/x86_64-linux-gnu/libcuda.so.450.51.05
+2023-07-02 05:00:10.587194: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:106] version string "450.51.05" made value 450.51.5
+2023-07-02 05:00:10.587202: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:907] trying to read NUMA node for device ordinal: 6
+2023-07-02 05:00:10.588434: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 6 with properties: 
+pciBusID: 0000:b4:00.0 name: Tesla T4 computeCapability: 7.5
+coreClock: 1.59GHz coreCount: 40 deviceMemorySize: 14.75GiB deviceMemoryBandwidth: 298.08GiB/s
+2023-07-02 05:00:10.588458: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:252] found DLL info with name: /lib/x86_64-linux-gnu/libcuda.so.1
+2023-07-02 05:00:10.588468: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:257] found DLL info with resolved path: /usr/lib/x86_64-linux-gnu/libcuda.so.450.51.05
+2023-07-02 05:00:10.588474: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:106] version string "450.51.05" made value 450.51.5
+2023-07-02 05:00:10.588482: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:907] trying to read NUMA node for device ordinal: 7
+2023-07-02 05:00:10.589680: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 7 with properties: 
+pciBusID: 0000:b5:00.0 name: Tesla T4 computeCapability: 7.5
+coreClock: 1.59GHz coreCount: 40 deviceMemorySize: 14.75GiB deviceMemoryBandwidth: 298.08GiB/s
+2023-07-02 05:00:10.589707: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:252] found DLL info with name: /lib/x86_64-linux-gnu/libcuda.so.1
+2023-07-02 05:00:10.589717: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:257] found DLL info with resolved path: /usr/lib/x86_64-linux-gnu/libcuda.so.450.51.05
+2023-07-02 05:00:10.589724: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:106] version string "450.51.05" made value 450.51.5
+2023-07-02 05:00:10.589732: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:907] trying to read NUMA node for device ordinal: 0
+2023-07-02 05:00:10.590695: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:252] found DLL info with name: /lib/x86_64-linux-gnu/libcuda.so.1
+2023-07-02 05:00:10.590711: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:257] found DLL info with resolved path: /usr/lib/x86_64-linux-gnu/libcuda.so.450.51.05
+2023-07-02 05:00:10.590718: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:106] version string "450.51.05" made value 450.51.5
+2023-07-02 05:00:10.590725: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:907] trying to read NUMA node for device ordinal: 1
+2023-07-02 05:00:10.591717: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:252] found DLL info with name: /lib/x86_64-linux-gnu/libcuda.so.1
+2023-07-02 05:00:10.591733: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:257] found DLL info with resolved path: /usr/lib/x86_64-linux-gnu/libcuda.so.450.51.05
+2023-07-02 05:00:10.591740: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:106] version string "450.51.05" made value 450.51.5
+2023-07-02 05:00:10.591747: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:907] trying to read NUMA node for device ordinal: 2
+2023-07-02 05:00:10.592970: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:252] found DLL info with name: /lib/x86_64-linux-gnu/libcuda.so.1
+2023-07-02 05:00:10.592985: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:257] found DLL info with resolved path: /usr/lib/x86_64-linux-gnu/libcuda.so.450.51.05
+2023-07-02 05:00:10.592992: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:106] version string "450.51.05" made value 450.51.5
+2023-07-02 05:00:10.592999: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:907] trying to read NUMA node for device ordinal: 3
+2023-07-02 05:00:10.593955: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:252] found DLL info with name: /lib/x86_64-linux-gnu/libcuda.so.1
+2023-07-02 05:00:10.593970: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:257] found DLL info with resolved path: /usr/lib/x86_64-linux-gnu/libcuda.so.450.51.05
+2023-07-02 05:00:10.593977: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:106] version string "450.51.05" made value 450.51.5
+2023-07-02 05:00:10.593984: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:907] trying to read NUMA node for device ordinal: 4
+2023-07-02 05:00:10.595205: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:252] found DLL info with name: /lib/x86_64-linux-gnu/libcuda.so.1
+2023-07-02 05:00:10.595220: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:257] found DLL info with resolved path: /usr/lib/x86_64-linux-gnu/libcuda.so.450.51.05
+2023-07-02 05:00:10.595227: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:106] version string "450.51.05" made value 450.51.5
+2023-07-02 05:00:10.595234: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:907] trying to read NUMA node for device ordinal: 5
+2023-07-02 05:00:10.596368: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:252] found DLL info with name: /lib/x86_64-linux-gnu/libcuda.so.1
+2023-07-02 05:00:10.596383: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:257] found DLL info with resolved path: /usr/lib/x86_64-linux-gnu/libcuda.so.450.51.05
+2023-07-02 05:00:10.596390: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:106] version string "450.51.05" made value 450.51.5
+2023-07-02 05:00:10.596397: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:907] trying to read NUMA node for device ordinal: 6
+2023-07-02 05:00:10.597531: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:252] found DLL info with name: /lib/x86_64-linux-gnu/libcuda.so.1
+2023-07-02 05:00:10.597547: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:257] found DLL info with resolved path: /usr/lib/x86_64-linux-gnu/libcuda.so.450.51.05
+2023-07-02 05:00:10.597553: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:106] version string "450.51.05" made value 450.51.5
+2023-07-02 05:00:10.597560: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:907] trying to read NUMA node for device ordinal: 7
+2023-07-02 05:00:10.598699: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:252] found DLL info with name: /lib/x86_64-linux-gnu/libcuda.so.1
+2023-07-02 05:00:10.598714: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:257] found DLL info with resolved path: /usr/lib/x86_64-linux-gnu/libcuda.so.450.51.05
+2023-07-02 05:00:10.598721: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:106] version string "450.51.05" made value 450.51.5
+2023-07-02 05:00:10.598728: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:907] trying to read NUMA node for device ordinal: 0
+2023-07-02 05:00:10.599670: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:252] found DLL info with name: /lib/x86_64-linux-gnu/libcuda.so.1
+2023-07-02 05:00:10.599685: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:257] found DLL info with resolved path: /usr/lib/x86_64-linux-gnu/libcuda.so.450.51.05
+2023-07-02 05:00:10.599692: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:106] version string "450.51.05" made value 450.51.5
+2023-07-02 05:00:10.599699: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:907] trying to read NUMA node for device ordinal: 1
+2023-07-02 05:00:10.600687: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:252] found DLL info with name: /lib/x86_64-linux-gnu/libcuda.so.1
+2023-07-02 05:00:10.600702: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:257] found DLL info with resolved path: /usr/lib/x86_64-linux-gnu/libcuda.so.450.51.05
+2023-07-02 05:00:10.600709: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:106] version string "450.51.05" made value 450.51.5
+2023-07-02 05:00:10.600716: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:907] trying to read NUMA node for device ordinal: 2
+2023-07-02 05:00:10.601778: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:252] found DLL info with name: /lib/x86_64-linux-gnu/libcuda.so.1
+2023-07-02 05:00:10.601793: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:257] found DLL info with resolved path: /usr/lib/x86_64-linux-gnu/libcuda.so.450.51.05
+2023-07-02 05:00:10.601799: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:106] version string "450.51.05" made value 450.51.5
+2023-07-02 05:00:10.601806: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:907] trying to read NUMA node for device ordinal: 3
+2023-07-02 05:00:10.602728: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:252] found DLL info with name: /lib/x86_64-linux-gnu/libcuda.so.1
+2023-07-02 05:00:10.602743: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:257] found DLL info with resolved path: /usr/lib/x86_64-linux-gnu/libcuda.so.450.51.05
+2023-07-02 05:00:10.602750: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:106] version string "450.51.05" made value 450.51.5
+2023-07-02 05:00:10.602757: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:907] trying to read NUMA node for device ordinal: 4
+2023-07-02 05:00:10.603812: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:252] found DLL info with name: /lib/x86_64-linux-gnu/libcuda.so.1
+2023-07-02 05:00:10.603828: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:257] found DLL info with resolved path: /usr/lib/x86_64-linux-gnu/libcuda.so.450.51.05
+2023-07-02 05:00:10.603834: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:106] version string "450.51.05" made value 450.51.5
+2023-07-02 05:00:10.603841: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:907] trying to read NUMA node for device ordinal: 5
+2023-07-02 05:00:10.604819: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:252] found DLL info with name: /lib/x86_64-linux-gnu/libcuda.so.1
+2023-07-02 05:00:10.604834: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:257] found DLL info with resolved path: /usr/lib/x86_64-linux-gnu/libcuda.so.450.51.05
+2023-07-02 05:00:10.604841: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:106] version string "450.51.05" made value 450.51.5
+2023-07-02 05:00:10.604848: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:907] trying to read NUMA node for device ordinal: 6
+2023-07-02 05:00:10.605845: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:252] found DLL info with name: /lib/x86_64-linux-gnu/libcuda.so.1
+2023-07-02 05:00:10.605860: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:257] found DLL info with resolved path: /usr/lib/x86_64-linux-gnu/libcuda.so.450.51.05
+2023-07-02 05:00:10.605867: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:106] version string "450.51.05" made value 450.51.5
+2023-07-02 05:00:10.605873: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:907] trying to read NUMA node for device ordinal: 7
+2023-07-02 05:00:10.606868: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1871] Adding visible gpu devices: 0, 1, 2, 3, 4, 5, 6, 7
+2023-07-02 05:00:10.606913: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudart.so.11.0
+2023-07-02 05:00:11.134529: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1195] Cuda stream priority range on GPU(7): -2,0
+2023-07-02 05:00:11.609912: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1195] Cuda stream priority range on GPU(7): -2,0
+2023-07-02 05:00:12.083343: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1195] Cuda stream priority range on GPU(7): -2,0
+2023-07-02 05:00:12.551184: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1195] Cuda stream priority range on GPU(7): -2,0
+2023-07-02 05:00:13.014980: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1195] Cuda stream priority range on GPU(7): -2,0
+2023-07-02 05:00:13.498407: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1195] Cuda stream priority range on GPU(7): -2,0
+2023-07-02 05:00:13.966173: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1195] Cuda stream priority range on GPU(7): -2,0
+2023-07-02 05:00:14.443628: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1195] Cuda stream priority range on GPU(7): -2,0
+2023-07-02 05:00:14.443680: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1246] TensorFlow compiled with CUDA 11.2 and cuDNN 8.1.0
+2023-07-02 05:00:14.443700: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 0
+2023-07-02 05:00:14.443707: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 0
+2023-07-02 05:00:14.443718: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 0
+2023-07-02 05:00:14.443734: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 1
+2023-07-02 05:00:14.443745: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 1
+2023-07-02 05:00:14.443751: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 2
+2023-07-02 05:00:14.443760: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 0
+2023-07-02 05:00:14.443767: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 2
+2023-07-02 05:00:14.443774: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 1
+2023-07-02 05:00:14.443779: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 3
+2023-07-02 05:00:14.443784: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 0
+2023-07-02 05:00:14.443791: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 3
+2023-07-02 05:00:14.443798: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 1
+2023-07-02 05:00:14.443803: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 4
+2023-07-02 05:00:14.443809: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 0
+2023-07-02 05:00:14.443815: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 4
+2023-07-02 05:00:14.443821: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 1
+2023-07-02 05:00:14.443826: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 5
+2023-07-02 05:00:14.443831: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 0
+2023-07-02 05:00:14.443837: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 5
+2023-07-02 05:00:14.443843: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 1
+2023-07-02 05:00:14.443848: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 6
+2023-07-02 05:00:14.443853: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 0
+2023-07-02 05:00:14.443859: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 6
+2023-07-02 05:00:14.443864: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 1
+2023-07-02 05:00:14.443870: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 7
+2023-07-02 05:00:14.443877: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 0
+2023-07-02 05:00:14.443883: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 7
+2023-07-02 05:00:14.443888: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 1
+2023-07-02 05:00:14.443895: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 8
+2023-07-02 05:00:14.443901: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 1
+2023-07-02 05:00:14.443905: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 0
+2023-07-02 05:00:14.443910: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 2
+2023-07-02 05:00:14.443915: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 1
+2023-07-02 05:00:14.443921: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 1
+2023-07-02 05:00:14.443926: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 1
+2023-07-02 05:00:14.443931: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 1
+2023-07-02 05:00:14.443936: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 2
+2023-07-02 05:00:14.443944: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 2
+2023-07-02 05:00:14.443950: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 3
+2023-07-02 05:00:14.443955: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 1
+2023-07-02 05:00:14.443960: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 3
+2023-07-02 05:00:14.443965: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 2
+2023-07-02 05:00:14.443970: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 4
+2023-07-02 05:00:14.443976: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 1
+2023-07-02 05:00:14.443981: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 4
+2023-07-02 05:00:14.443986: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 2
+2023-07-02 05:00:14.443991: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 5
+2023-07-02 05:00:14.443996: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 1
+2023-07-02 05:00:14.444002: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 5
+2023-07-02 05:00:14.444007: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 2
+2023-07-02 05:00:14.444011: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 6
+2023-07-02 05:00:14.444018: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 1
+2023-07-02 05:00:14.444024: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 6
+2023-07-02 05:00:14.444029: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 2
+2023-07-02 05:00:14.444034: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 7
+2023-07-02 05:00:14.444039: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 1
+2023-07-02 05:00:14.444044: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 7
+2023-07-02 05:00:14.444050: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 2
+2023-07-02 05:00:14.444055: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 8
+2023-07-02 05:00:14.444060: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 2
+2023-07-02 05:00:14.444065: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 0
+2023-07-02 05:00:14.444070: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 3
+2023-07-02 05:00:14.444076: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 1
+2023-07-02 05:00:14.444081: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 2
+2023-07-02 05:00:14.444086: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 1
+2023-07-02 05:00:14.444091: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 3
+2023-07-02 05:00:14.444095: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 2
+2023-07-02 05:00:14.444102: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 2
+2023-07-02 05:00:14.444108: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 2
+2023-07-02 05:00:14.444113: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 2
+2023-07-02 05:00:14.444117: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 3
+2023-07-02 05:00:14.444122: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 3
+2023-07-02 05:00:14.444128: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 4
+2023-07-02 05:00:14.444136: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 2
+2023-07-02 05:00:14.444141: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 4
+2023-07-02 05:00:14.444146: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 3
+2023-07-02 05:00:14.444151: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 5
+2023-07-02 05:00:14.444158: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 2
+2023-07-02 05:00:14.444163: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 5
+2023-07-02 05:00:14.444168: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 3
+2023-07-02 05:00:14.444172: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 6
+2023-07-02 05:00:14.444179: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 2
+2023-07-02 05:00:14.444189: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 6
+2023-07-02 05:00:14.444194: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 3
+2023-07-02 05:00:14.444199: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 7
+2023-07-02 05:00:14.444205: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 2
+2023-07-02 05:00:14.444210: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 7
+2023-07-02 05:00:14.444216: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 3
+2023-07-02 05:00:14.444222: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 8
+2023-07-02 05:00:14.444227: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 3
+2023-07-02 05:00:14.444232: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 0
+2023-07-02 05:00:14.444237: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 4
+2023-07-02 05:00:14.444243: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 1
+2023-07-02 05:00:14.444248: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 3
+2023-07-02 05:00:14.444253: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 1
+2023-07-02 05:00:14.444258: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 4
+2023-07-02 05:00:14.444262: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 2
+2023-07-02 05:00:14.444269: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 3
+2023-07-02 05:00:14.444274: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 2
+2023-07-02 05:00:14.444279: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 4
+2023-07-02 05:00:14.444284: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 3
+2023-07-02 05:00:14.444289: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 3
+2023-07-02 05:00:14.444295: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 3
+2023-07-02 05:00:14.444300: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 3
+2023-07-02 05:00:14.444304: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 4
+2023-07-02 05:00:14.444309: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 4
+2023-07-02 05:00:14.444314: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 5
+2023-07-02 05:00:14.444321: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 3
+2023-07-02 05:00:14.444330: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 5
+2023-07-02 05:00:14.444335: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 4
+2023-07-02 05:00:14.444339: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 6
+2023-07-02 05:00:14.444345: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 3
+2023-07-02 05:00:14.444351: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 6
+2023-07-02 05:00:14.444355: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 4
+2023-07-02 05:00:14.444360: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 7
+2023-07-02 05:00:14.444366: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 3
+2023-07-02 05:00:14.444372: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 7
+2023-07-02 05:00:14.444378: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 4
+2023-07-02 05:00:14.444383: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 8
+2023-07-02 05:00:14.444388: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 4
+2023-07-02 05:00:14.444393: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 0
+2023-07-02 05:00:14.444398: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 5
+2023-07-02 05:00:14.444404: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 1
+2023-07-02 05:00:14.444409: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 4
+2023-07-02 05:00:14.444414: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 1
+2023-07-02 05:00:14.444418: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 5
+2023-07-02 05:00:14.444425: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 2
+2023-07-02 05:00:14.444432: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 4
+2023-07-02 05:00:14.444437: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 2
+2023-07-02 05:00:14.444441: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 5
+2023-07-02 05:00:14.444446: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 3
+2023-07-02 05:00:14.444452: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 4
+2023-07-02 05:00:14.444457: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 3
+2023-07-02 05:00:14.444462: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 5
+2023-07-02 05:00:14.444466: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 4
+2023-07-02 05:00:14.444472: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 4
+2023-07-02 05:00:14.444477: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 4
+2023-07-02 05:00:14.444483: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 4
+2023-07-02 05:00:14.444488: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 5
+2023-07-02 05:00:14.444493: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 5
+2023-07-02 05:00:14.444497: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 6
+2023-07-02 05:00:14.444502: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 4
+2023-07-02 05:00:14.444508: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 6
+2023-07-02 05:00:14.444516: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 5
+2023-07-02 05:00:14.444521: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 7
+2023-07-02 05:00:14.444526: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 4
+2023-07-02 05:00:14.444532: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 7
+2023-07-02 05:00:14.444537: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 5
+2023-07-02 05:00:14.444542: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 8
+2023-07-02 05:00:14.444548: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 5
+2023-07-02 05:00:14.444553: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 0
+2023-07-02 05:00:14.444559: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 6
+2023-07-02 05:00:14.444564: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 1
+2023-07-02 05:00:14.444569: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 5
+2023-07-02 05:00:14.444574: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 1
+2023-07-02 05:00:14.444579: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 6
+2023-07-02 05:00:14.444585: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 2
+2023-07-02 05:00:14.444590: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 5
+2023-07-02 05:00:14.444595: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 2
+2023-07-02 05:00:14.444600: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 6
+2023-07-02 05:00:14.444605: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 3
+2023-07-02 05:00:14.444611: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 5
+2023-07-02 05:00:14.444616: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 3
+2023-07-02 05:00:14.444621: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 6
+2023-07-02 05:00:14.444626: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 4
+2023-07-02 05:00:14.444631: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 5
+2023-07-02 05:00:14.444637: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 4
+2023-07-02 05:00:14.444641: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 6
+2023-07-02 05:00:14.444646: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 5
+2023-07-02 05:00:14.444651: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 5
+2023-07-02 05:00:14.444656: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 5
+2023-07-02 05:00:14.444662: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 5
+2023-07-02 05:00:14.444667: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 6
+2023-07-02 05:00:14.444672: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 6
+2023-07-02 05:00:14.444677: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 7
+2023-07-02 05:00:14.444682: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 5
+2023-07-02 05:00:14.444687: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 7
+2023-07-02 05:00:14.444692: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 6
+2023-07-02 05:00:14.444697: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 8
+2023-07-02 05:00:14.444706: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 6
+2023-07-02 05:00:14.444712: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 0
+2023-07-02 05:00:14.444717: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 7
+2023-07-02 05:00:14.444722: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 1
+2023-07-02 05:00:14.444727: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 6
+2023-07-02 05:00:14.444732: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 1
+2023-07-02 05:00:14.444737: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 7
+2023-07-02 05:00:14.444743: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 2
+2023-07-02 05:00:14.444748: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 6
+2023-07-02 05:00:14.444753: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 2
+2023-07-02 05:00:14.444758: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 7
+2023-07-02 05:00:14.444764: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 3
+2023-07-02 05:00:14.444769: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 6
+2023-07-02 05:00:14.444774: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 3
+2023-07-02 05:00:14.444779: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 7
+2023-07-02 05:00:14.444784: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 4
+2023-07-02 05:00:14.444790: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 6
+2023-07-02 05:00:14.444795: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 4
+2023-07-02 05:00:14.444799: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 7
+2023-07-02 05:00:14.444804: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 5
+2023-07-02 05:00:14.444810: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 6
+2023-07-02 05:00:14.444815: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 5
+2023-07-02 05:00:14.444820: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 7
+2023-07-02 05:00:14.444825: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 6
+2023-07-02 05:00:14.444830: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 6
+2023-07-02 05:00:14.444835: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 6
+2023-07-02 05:00:14.444840: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 6
+2023-07-02 05:00:14.444846: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 7
+2023-07-02 05:00:14.444851: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 7
+2023-07-02 05:00:14.444856: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 8
+2023-07-02 05:00:14.444861: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 7
+2023-07-02 05:00:14.444866: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 0
+2023-07-02 05:00:14.444871: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 8
+2023-07-02 05:00:14.444876: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 1
+2023-07-02 05:00:14.444881: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 7
+2023-07-02 05:00:14.444892: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 1
+2023-07-02 05:00:14.444898: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 8
+2023-07-02 05:00:14.444903: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 2
+2023-07-02 05:00:14.444909: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 7
+2023-07-02 05:00:14.444914: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 2
+2023-07-02 05:00:14.444918: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 8
+2023-07-02 05:00:14.444924: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 3
+2023-07-02 05:00:14.444929: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 7
+2023-07-02 05:00:14.444934: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 3
+2023-07-02 05:00:14.444939: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 8
+2023-07-02 05:00:14.444944: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 4
+2023-07-02 05:00:14.444950: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 7
+2023-07-02 05:00:14.444955: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 4
+2023-07-02 05:00:14.444960: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 8
+2023-07-02 05:00:14.444964: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 5
+2023-07-02 05:00:14.444970: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 7
+2023-07-02 05:00:14.444976: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 5
+2023-07-02 05:00:14.444980: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 8
+2023-07-02 05:00:14.444985: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 6
+2023-07-02 05:00:14.444991: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 7
+2023-07-02 05:00:14.444996: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 6
+2023-07-02 05:00:14.445001: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 8
+2023-07-02 05:00:14.445006: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 7
+2023-07-02 05:00:14.445011: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 7
+2023-07-02 05:00:14.445016: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 7
+2023-07-02 05:00:14.445032: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1258] Device interconnect StreamExecutor with strength 1 edge matrix:
+2023-07-02 05:00:14.445041: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1264]      0 1 2 3 4 5 6 7 
+2023-07-02 05:00:14.445048: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1277] 0:   N Y Y Y Y Y Y Y 
+2023-07-02 05:00:14.445054: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1277] 1:   Y N Y Y Y Y Y Y 
+2023-07-02 05:00:14.445059: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1277] 2:   Y Y N Y Y Y Y Y 
+2023-07-02 05:00:14.445064: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1277] 3:   Y Y Y N Y Y Y Y 
+2023-07-02 05:00:14.445069: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1277] 4:   Y Y Y Y N Y Y Y 
+2023-07-02 05:00:14.445074: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1277] 5:   Y Y Y Y Y N Y Y 
+2023-07-02 05:00:14.445079: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1277] 6:   Y Y Y Y Y Y N Y 
+2023-07-02 05:00:14.445084: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1277] 7:   Y Y Y Y Y Y Y N 
+2023-07-02 05:00:14.445096: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 0
+2023-07-02 05:00:14.445106: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 1
+2023-07-02 05:00:14.445426: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:252] found DLL info with name: /lib/x86_64-linux-gnu/libcuda.so.1
+2023-07-02 05:00:14.445449: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:257] found DLL info with resolved path: /usr/lib/x86_64-linux-gnu/libcuda.so.450.51.05
+2023-07-02 05:00:14.445462: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:106] version string "450.51.05" made value 450.51.5
+2023-07-02 05:00:14.445474: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:907] trying to read NUMA node for device ordinal: 0
+2023-07-02 05:00:14.446531: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 1
+2023-07-02 05:00:14.446547: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 2
+2023-07-02 05:00:14.446611: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:252] found DLL info with name: /lib/x86_64-linux-gnu/libcuda.so.1
+2023-07-02 05:00:14.446626: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:257] found DLL info with resolved path: /usr/lib/x86_64-linux-gnu/libcuda.so.450.51.05
+2023-07-02 05:00:14.446635: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:106] version string "450.51.05" made value 450.51.5
+2023-07-02 05:00:14.446643: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:907] trying to read NUMA node for device ordinal: 1
+2023-07-02 05:00:14.447645: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 2
+2023-07-02 05:00:14.447657: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 3
+2023-07-02 05:00:14.447702: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:252] found DLL info with name: /lib/x86_64-linux-gnu/libcuda.so.1
+2023-07-02 05:00:14.447715: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:257] found DLL info with resolved path: /usr/lib/x86_64-linux-gnu/libcuda.so.450.51.05
+2023-07-02 05:00:14.447724: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:106] version string "450.51.05" made value 450.51.5
+2023-07-02 05:00:14.447732: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:907] trying to read NUMA node for device ordinal: 2
+2023-07-02 05:00:14.448958: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 3
+2023-07-02 05:00:14.448970: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 4
+2023-07-02 05:00:14.449012: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:252] found DLL info with name: /lib/x86_64-linux-gnu/libcuda.so.1
+2023-07-02 05:00:14.449024: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:257] found DLL info with resolved path: /usr/lib/x86_64-linux-gnu/libcuda.so.450.51.05
+2023-07-02 05:00:14.449032: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:106] version string "450.51.05" made value 450.51.5
+2023-07-02 05:00:14.449039: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:907] trying to read NUMA node for device ordinal: 3
+2023-07-02 05:00:14.449994: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 4
+2023-07-02 05:00:14.450005: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 5
+2023-07-02 05:00:14.450048: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:252] found DLL info with name: /lib/x86_64-linux-gnu/libcuda.so.1
+2023-07-02 05:00:14.450061: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:257] found DLL info with resolved path: /usr/lib/x86_64-linux-gnu/libcuda.so.450.51.05
+2023-07-02 05:00:14.450068: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:106] version string "450.51.05" made value 450.51.5
+2023-07-02 05:00:14.450076: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:907] trying to read NUMA node for device ordinal: 4
+2023-07-02 05:00:14.451295: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 5
+2023-07-02 05:00:14.451315: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 6
+2023-07-02 05:00:14.451357: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:252] found DLL info with name: /lib/x86_64-linux-gnu/libcuda.so.1
+2023-07-02 05:00:14.451369: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:257] found DLL info with resolved path: /usr/lib/x86_64-linux-gnu/libcuda.so.450.51.05
+2023-07-02 05:00:14.451377: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:106] version string "450.51.05" made value 450.51.5
+2023-07-02 05:00:14.451385: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:907] trying to read NUMA node for device ordinal: 5
+2023-07-02 05:00:14.452599: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 6
+2023-07-02 05:00:14.452612: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 7
+2023-07-02 05:00:14.452652: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:252] found DLL info with name: /lib/x86_64-linux-gnu/libcuda.so.1
+2023-07-02 05:00:14.452664: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:257] found DLL info with resolved path: /usr/lib/x86_64-linux-gnu/libcuda.so.450.51.05
+2023-07-02 05:00:14.452672: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:106] version string "450.51.05" made value 450.51.5
+2023-07-02 05:00:14.452679: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:907] trying to read NUMA node for device ordinal: 6
+2023-07-02 05:00:14.453908: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 7
+2023-07-02 05:00:14.453920: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 8
+2023-07-02 05:00:14.453959: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:252] found DLL info with name: /lib/x86_64-linux-gnu/libcuda.so.1
+2023-07-02 05:00:14.453971: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:257] found DLL info with resolved path: /usr/lib/x86_64-linux-gnu/libcuda.so.450.51.05
+2023-07-02 05:00:14.453979: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:106] version string "450.51.05" made value 450.51.5
+2023-07-02 05:00:14.453986: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:907] trying to read NUMA node for device ordinal: 7
+2023-07-02 05:00:14.455213: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:252] found DLL info with name: /lib/x86_64-linux-gnu/libcuda.so.1
+2023-07-02 05:00:14.455229: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:257] found DLL info with resolved path: /usr/lib/x86_64-linux-gnu/libcuda.so.450.51.05
+2023-07-02 05:00:14.455236: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:106] version string "450.51.05" made value 450.51.5
+2023-07-02 05:00:14.455244: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:907] trying to read NUMA node for device ordinal: 0
+2023-07-02 05:00:14.456370: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1544] GPUDevice PlatformDeviceId 0 TfDeviceId 0 on bus 1 numa: 0 pci: 0000:3d:00.0 DeviceLocality: bus_id: 1
+links {
+  link {
+    device_id: 1
+    type: "StreamExecutor"
+    strength: 1
+  }
+  link {
+    device_id: 2
+    type: "StreamExecutor"
+    strength: 1
+  }
+  link {
+    device_id: 3
+    type: "StreamExecutor"
+    strength: 1
+  }
+  link {
+    device_id: 4
+    type: "StreamExecutor"
+    strength: 1
+  }
+  link {
+    device_id: 5
+    type: "StreamExecutor"
+    strength: 1
+  }
+  link {
+    device_id: 6
+    type: "StreamExecutor"
+    strength: 1
+  }
+  link {
+    device_id: 7
+    type: "StreamExecutor"
+    strength: 1
+  }
+}
+
+2023-07-02 05:00:14.456424: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:252] found DLL info with name: /lib/x86_64-linux-gnu/libcuda.so.1
+2023-07-02 05:00:14.456438: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:257] found DLL info with resolved path: /usr/lib/x86_64-linux-gnu/libcuda.so.450.51.05
+2023-07-02 05:00:14.456447: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:106] version string "450.51.05" made value 450.51.5
+2023-07-02 05:00:14.456463: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:907] trying to read NUMA node for device ordinal: 1
+2023-07-02 05:00:14.457509: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1544] GPUDevice PlatformDeviceId 1 TfDeviceId 1 on bus 1 numa: 0 pci: 0000:3e:00.0 DeviceLocality: bus_id: 1
+links {
+  link {
+    type: "StreamExecutor"
+    strength: 1
+  }
+  link {
+    device_id: 2
+    type: "StreamExecutor"
+    strength: 1
+  }
+  link {
+    device_id: 3
+    type: "StreamExecutor"
+    strength: 1
+  }
+  link {
+    device_id: 4
+    type: "StreamExecutor"
+    strength: 1
+  }
+  link {
+    device_id: 5
+    type: "StreamExecutor"
+    strength: 1
+  }
+  link {
+    device_id: 6
+    type: "StreamExecutor"
+    strength: 1
+  }
+  link {
+    device_id: 7
+    type: "StreamExecutor"
+    strength: 1
+  }
+}
+
+2023-07-02 05:00:14.457544: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:252] found DLL info with name: /lib/x86_64-linux-gnu/libcuda.so.1
+2023-07-02 05:00:14.457556: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:257] found DLL info with resolved path: /usr/lib/x86_64-linux-gnu/libcuda.so.450.51.05
+2023-07-02 05:00:14.457564: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:106] version string "450.51.05" made value 450.51.5
+2023-07-02 05:00:14.457573: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:907] trying to read NUMA node for device ordinal: 2
+2023-07-02 05:00:14.458870: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1544] GPUDevice PlatformDeviceId 2 TfDeviceId 2 on bus 1 numa: 0 pci: 0000:40:00.0 DeviceLocality: bus_id: 1
+links {
+  link {
+    type: "StreamExecutor"
+    strength: 1
+  }
+  link {
+    device_id: 1
+    type: "StreamExecutor"
+    strength: 1
+  }
+  link {
+    device_id: 3
+    type: "StreamExecutor"
+    strength: 1
+  }
+  link {
+    device_id: 4
+    type: "StreamExecutor"
+    strength: 1
+  }
+  link {
+    device_id: 5
+    type: "StreamExecutor"
+    strength: 1
+  }
+  link {
+    device_id: 6
+    type: "StreamExecutor"
+    strength: 1
+  }
+  link {
+    device_id: 7
+    type: "StreamExecutor"
+    strength: 1
+  }
+}
+
+2023-07-02 05:00:14.458912: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:252] found DLL info with name: /lib/x86_64-linux-gnu/libcuda.so.1
+2023-07-02 05:00:14.458925: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:257] found DLL info with resolved path: /usr/lib/x86_64-linux-gnu/libcuda.so.450.51.05
+2023-07-02 05:00:14.458933: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:106] version string "450.51.05" made value 450.51.5
+2023-07-02 05:00:14.458942: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:907] trying to read NUMA node for device ordinal: 3
+2023-07-02 05:00:14.459925: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1544] GPUDevice PlatformDeviceId 3 TfDeviceId 3 on bus 1 numa: 0 pci: 0000:41:00.0 DeviceLocality: bus_id: 1
+links {
+  link {
+    type: "StreamExecutor"
+    strength: 1
+  }
+  link {
+    device_id: 1
+    type: "StreamExecutor"
+    strength: 1
+  }
+  link {
+    device_id: 2
+    type: "StreamExecutor"
+    strength: 1
+  }
+  link {
+    device_id: 4
+    type: "StreamExecutor"
+    strength: 1
+  }
+  link {
+    device_id: 5
+    type: "StreamExecutor"
+    strength: 1
+  }
+  link {
+    device_id: 6
+    type: "StreamExecutor"
+    strength: 1
+  }
+  link {
+    device_id: 7
+    type: "StreamExecutor"
+    strength: 1
+  }
+}
+
+2023-07-02 05:00:14.459952: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:252] found DLL info with name: /lib/x86_64-linux-gnu/libcuda.so.1
+2023-07-02 05:00:14.459963: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:257] found DLL info with resolved path: /usr/lib/x86_64-linux-gnu/libcuda.so.450.51.05
+2023-07-02 05:00:14.459971: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:106] version string "450.51.05" made value 450.51.5
+2023-07-02 05:00:14.459978: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:907] trying to read NUMA node for device ordinal: 4
+2023-07-02 05:00:14.461214: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1544] GPUDevice PlatformDeviceId 4 TfDeviceId 4 on bus 3 numa: 2 pci: 0000:b1:00.0 DeviceLocality: bus_id: 3
+numa_node: 2
+links {
+  link {
+    type: "StreamExecutor"
+    strength: 1
+  }
+  link {
+    device_id: 1
+    type: "StreamExecutor"
+    strength: 1
+  }
+  link {
+    device_id: 2
+    type: "StreamExecutor"
+    strength: 1
+  }
+  link {
+    device_id: 3
+    type: "StreamExecutor"
+    strength: 1
+  }
+  link {
+    device_id: 5
+    type: "StreamExecutor"
+    strength: 1
+  }
+  link {
+    device_id: 6
+    type: "StreamExecutor"
+    strength: 1
+  }
+  link {
+    device_id: 7
+    type: "StreamExecutor"
+    strength: 1
+  }
+}
+
+2023-07-02 05:00:14.461248: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:252] found DLL info with name: /lib/x86_64-linux-gnu/libcuda.so.1
+2023-07-02 05:00:14.461259: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:257] found DLL info with resolved path: /usr/lib/x86_64-linux-gnu/libcuda.so.450.51.05
+2023-07-02 05:00:14.461267: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:106] version string "450.51.05" made value 450.51.5
+2023-07-02 05:00:14.461275: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:907] trying to read NUMA node for device ordinal: 5
+2023-07-02 05:00:14.462510: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1544] GPUDevice PlatformDeviceId 5 TfDeviceId 5 on bus 3 numa: 2 pci: 0000:b2:00.0 DeviceLocality: bus_id: 3
+numa_node: 2
+links {
+  link {
+    type: "StreamExecutor"
+    strength: 1
+  }
+  link {
+    device_id: 1
+    type: "StreamExecutor"
+    strength: 1
+  }
+  link {
+    device_id: 2
+    type: "StreamExecutor"
+    strength: 1
+  }
+  link {
+    device_id: 3
+    type: "StreamExecutor"
+    strength: 1
+  }
+  link {
+    device_id: 4
+    type: "StreamExecutor"
+    strength: 1
+  }
+  link {
+    device_id: 6
+    type: "StreamExecutor"
+    strength: 1
+  }
+  link {
+    device_id: 7
+    type: "StreamExecutor"
+    strength: 1
+  }
+}
+
+2023-07-02 05:00:14.462537: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:252] found DLL info with name: /lib/x86_64-linux-gnu/libcuda.so.1
+2023-07-02 05:00:14.462548: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:257] found DLL info with resolved path: /usr/lib/x86_64-linux-gnu/libcuda.so.450.51.05
+2023-07-02 05:00:14.462557: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:106] version string "450.51.05" made value 450.51.5
+2023-07-02 05:00:14.462566: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:907] trying to read NUMA node for device ordinal: 6
+2023-07-02 05:00:14.463805: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1544] GPUDevice PlatformDeviceId 6 TfDeviceId 6 on bus 3 numa: 2 pci: 0000:b4:00.0 DeviceLocality: bus_id: 3
+numa_node: 2
+links {
+  link {
+    type: "StreamExecutor"
+    strength: 1
+  }
+  link {
+    device_id: 1
+    type: "StreamExecutor"
+    strength: 1
+  }
+  link {
+    device_id: 2
+    type: "StreamExecutor"
+    strength: 1
+  }
+  link {
+    device_id: 3
+    type: "StreamExecutor"
+    strength: 1
+  }
+  link {
+    device_id: 4
+    type: "StreamExecutor"
+    strength: 1
+  }
+  link {
+    device_id: 5
+    type: "StreamExecutor"
+    strength: 1
+  }
+  link {
+    device_id: 7
+    type: "StreamExecutor"
+    strength: 1
+  }
+}
+
+2023-07-02 05:00:14.463831: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:252] found DLL info with name: /lib/x86_64-linux-gnu/libcuda.so.1
+2023-07-02 05:00:14.463842: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:257] found DLL info with resolved path: /usr/lib/x86_64-linux-gnu/libcuda.so.450.51.05
+2023-07-02 05:00:14.463849: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:106] version string "450.51.05" made value 450.51.5
+2023-07-02 05:00:14.463857: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:907] trying to read NUMA node for device ordinal: 7
+2023-07-02 05:00:14.465073: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1544] GPUDevice PlatformDeviceId 7 TfDeviceId 7 on bus 3 numa: 2 pci: 0000:b5:00.0 DeviceLocality: bus_id: 3
+numa_node: 2
+links {
+  link {
+    type: "StreamExecutor"
+    strength: 1
+  }
+  link {
+    device_id: 1
+    type: "StreamExecutor"
+    strength: 1
+  }
+  link {
+    device_id: 2
+    type: "StreamExecutor"
+    strength: 1
+  }
+  link {
+    device_id: 3
+    type: "StreamExecutor"
+    strength: 1
+  }
+  link {
+    device_id: 4
+    type: "StreamExecutor"
+    strength: 1
+  }
+  link {
+    device_id: 5
+    type: "StreamExecutor"
+    strength: 1
+  }
+  link {
+    device_id: 6
+    type: "StreamExecutor"
+    strength: 1
+  }
+}
+
+2023-07-02 05:00:14.465108: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:252] found DLL info with name: /lib/x86_64-linux-gnu/libcuda.so.1
+2023-07-02 05:00:14.465119: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:257] found DLL info with resolved path: /usr/lib/x86_64-linux-gnu/libcuda.so.450.51.05
+2023-07-02 05:00:14.465127: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:106] version string "450.51.05" made value 450.51.5
+2023-07-02 05:00:14.465135: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:907] trying to read NUMA node for device ordinal: 0
+2023-07-02 05:00:14.466099: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 0
+2023-07-02 05:00:14.466111: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 0
+2023-07-02 05:00:14.466125: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 256B
+2023-07-02 05:00:14.466130: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 512B
+2023-07-02 05:00:14.466138: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 1.0KiB
+2023-07-02 05:00:14.466144: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 2.0KiB
+2023-07-02 05:00:14.466149: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 4.0KiB
+2023-07-02 05:00:14.466154: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 8.0KiB
+2023-07-02 05:00:14.466159: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 16.0KiB
+2023-07-02 05:00:14.466164: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 32.0KiB
+2023-07-02 05:00:14.466170: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 64.0KiB
+2023-07-02 05:00:14.466176: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 128.0KiB
+2023-07-02 05:00:14.466188: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 256.0KiB
+2023-07-02 05:00:14.466194: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 512.0KiB
+2023-07-02 05:00:14.466200: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 1.00MiB
+2023-07-02 05:00:14.466205: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 2.00MiB
+2023-07-02 05:00:14.466210: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 4.00MiB
+2023-07-02 05:00:14.466215: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 8.00MiB
+2023-07-02 05:00:14.466220: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 16.00MiB
+2023-07-02 05:00:14.466226: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 32.00MiB
+2023-07-02 05:00:14.466231: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 64.00MiB
+2023-07-02 05:00:14.466236: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 128.00MiB
+2023-07-02 05:00:14.466241: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 256.00MiB
+2023-07-02 05:00:14.466270: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1418] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 5950 MB memory) -> physical GPU (device: 0, name: Tesla T4, pci bus id: 0000:3d:00.0, compute capability: 7.5)
+2023-07-02 05:00:14.466280: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 0
+2023-07-02 05:00:14.466310: I tensorflow/stream_executor/stream.cc:256] [stream=0x559e326d20b0,impl=0x559e33163df0] Called Stream::Stream(parent=0x559ddaa9d090)
+2023-07-02 05:00:14.466319: I tensorflow/stream_executor/stream.cc:298] [stream=0x559e326d20b0,impl=0x559e33163df0] Called Stream::Init()
+2023-07-02 05:00:14.466331: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 1
+2023-07-02 05:00:14.466369: I tensorflow/stream_executor/cuda/cuda_driver.cc:754] successfully created stream 0x559e3264d170 for context 0x559ddc39b4b0 on thread
+2023-07-02 05:00:14.466376: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 1
+2023-07-02 05:00:14.466386: I tensorflow/core/common_runtime/gpu/gpu_device.cc:253] Created stream[0] = 0x559e326d20b0 with priority: 0
+2023-07-02 05:00:14.466394: I tensorflow/stream_executor/stream.cc:256] [stream=0x559e326d2160,impl=0x559e328dc040] Called Stream::Stream(parent=0x559ddaa9d090)
+2023-07-02 05:00:14.466400: I tensorflow/stream_executor/stream.cc:298] [stream=0x559e326d2160,impl=0x559e328dc040] Called Stream::Init()
+2023-07-02 05:00:14.466404: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 1
+2023-07-02 05:00:14.466411: I tensorflow/stream_executor/cuda/cuda_driver.cc:754] successfully created stream 0x559e0efd9c20 for context 0x559ddc39b4b0 on thread
+2023-07-02 05:00:14.466417: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 1
+2023-07-02 05:00:14.466423: I tensorflow/core/common_runtime/gpu/gpu_device.cc:272] Created host_to_device_stream[0] = 0x559e326d2160
+2023-07-02 05:00:14.466430: I tensorflow/stream_executor/stream.cc:256] [stream=0x559e326d2480,impl=0x559e34b58b40] Called Stream::Stream(parent=0x559ddaa9d090)
+2023-07-02 05:00:14.466436: I tensorflow/stream_executor/stream.cc:298] [stream=0x559e326d2480,impl=0x559e34b58b40] Called Stream::Init()
+2023-07-02 05:00:14.466441: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 1
+2023-07-02 05:00:14.466869: I tensorflow/stream_executor/cuda/cuda_driver.cc:754] successfully created stream 0x559e0eee5e80 for context 0x559ddc39b4b0 on thread
+2023-07-02 05:00:14.466886: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 1
+2023-07-02 05:00:14.466895: I tensorflow/core/common_runtime/gpu/gpu_device.cc:277] Created device_to_host_stream[0] = 0x559e326d2480
+2023-07-02 05:00:14.466905: I tensorflow/stream_executor/stream.cc:256] [stream=0x559e326d2750,impl=0x559e33163e20] Called Stream::Stream(parent=0x559ddaa9d090)
+2023-07-02 05:00:14.466911: I tensorflow/stream_executor/stream.cc:298] [stream=0x559e326d2750,impl=0x559e33163e20] Called Stream::Init()
+2023-07-02 05:00:14.466917: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 1
+2023-07-02 05:00:14.466928: I tensorflow/stream_executor/cuda/cuda_driver.cc:754] successfully created stream 0x559e230ed3d0 for context 0x559ddc39b4b0 on thread
+2023-07-02 05:00:14.466933: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 1
+2023-07-02 05:00:14.466939: I tensorflow/core/common_runtime/gpu/gpu_device.cc:293] Created device_to_device_stream[0] = 0x559e326d2750
+2023-07-02 05:00:14.467192: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:252] found DLL info with name: /lib/x86_64-linux-gnu/libcuda.so.1
+2023-07-02 05:00:14.467214: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:257] found DLL info with resolved path: /usr/lib/x86_64-linux-gnu/libcuda.so.450.51.05
+2023-07-02 05:00:14.467223: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:106] version string "450.51.05" made value 450.51.5
+2023-07-02 05:00:14.467233: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:907] trying to read NUMA node for device ordinal: 1
+2023-07-02 05:00:14.468253: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 1
+2023-07-02 05:00:14.468266: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 1
+2023-07-02 05:00:14.468284: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 256B
+2023-07-02 05:00:14.468289: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 512B
+2023-07-02 05:00:14.468296: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 1.0KiB
+2023-07-02 05:00:14.468303: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 2.0KiB
+2023-07-02 05:00:14.468308: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 4.0KiB
+2023-07-02 05:00:14.468313: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 8.0KiB
+2023-07-02 05:00:14.468318: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 16.0KiB
+2023-07-02 05:00:14.468324: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 32.0KiB
+2023-07-02 05:00:14.468329: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 64.0KiB
+2023-07-02 05:00:14.468335: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 128.0KiB
+2023-07-02 05:00:14.468340: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 256.0KiB
+2023-07-02 05:00:14.468345: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 512.0KiB
+2023-07-02 05:00:14.468351: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 1.00MiB
+2023-07-02 05:00:14.468356: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 2.00MiB
+2023-07-02 05:00:14.468361: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 4.00MiB
+2023-07-02 05:00:14.468366: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 8.00MiB
+2023-07-02 05:00:14.468370: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 16.00MiB
+2023-07-02 05:00:14.468376: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 32.00MiB
+2023-07-02 05:00:14.468382: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 64.00MiB
+2023-07-02 05:00:14.468387: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 128.00MiB
+2023-07-02 05:00:14.468392: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 256.00MiB
+2023-07-02 05:00:14.468419: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1418] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:1 with 6877 MB memory) -> physical GPU (device: 1, name: Tesla T4, pci bus id: 0000:3e:00.0, compute capability: 7.5)
+2023-07-02 05:00:14.468427: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 1
+2023-07-02 05:00:14.468438: I tensorflow/stream_executor/stream.cc:256] [stream=0x559e330ca2b0,impl=0x559e34b55d20] Called Stream::Stream(parent=0x559ddcfcbc90)
+2023-07-02 05:00:14.468445: I tensorflow/stream_executor/stream.cc:298] [stream=0x559e330ca2b0,impl=0x559e34b55d20] Called Stream::Init()
+2023-07-02 05:00:14.468452: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 2
+2023-07-02 05:00:14.468475: I tensorflow/stream_executor/cuda/cuda_driver.cc:754] successfully created stream 0x559e330c8ea0 for context 0x559ddc3b3d80 on thread
+2023-07-02 05:00:14.468482: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 2
+2023-07-02 05:00:14.468489: I tensorflow/core/common_runtime/gpu/gpu_device.cc:253] Created stream[0] = 0x559e330ca2b0 with priority: 0
+2023-07-02 05:00:14.468496: I tensorflow/stream_executor/stream.cc:256] [stream=0x559e330ca360,impl=0x559e34b559e0] Called Stream::Stream(parent=0x559ddcfcbc90)
+2023-07-02 05:00:14.468502: I tensorflow/stream_executor/stream.cc:298] [stream=0x559e330ca360,impl=0x559e34b559e0] Called Stream::Init()
+2023-07-02 05:00:14.468511: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 2
+2023-07-02 05:00:14.468518: I tensorflow/stream_executor/cuda/cuda_driver.cc:754] successfully created stream 0x559e330c8e80 for context 0x559ddc3b3d80 on thread
+2023-07-02 05:00:14.468523: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 2
+2023-07-02 05:00:14.468529: I tensorflow/core/common_runtime/gpu/gpu_device.cc:272] Created host_to_device_stream[0] = 0x559e330ca360
+2023-07-02 05:00:14.468537: I tensorflow/stream_executor/stream.cc:256] [stream=0x559e330ca6b0,impl=0x559e34c99d80] Called Stream::Stream(parent=0x559ddcfcbc90)
+2023-07-02 05:00:14.468542: I tensorflow/stream_executor/stream.cc:298] [stream=0x559e330ca6b0,impl=0x559e34c99d80] Called Stream::Init()
+2023-07-02 05:00:14.468547: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 2
+2023-07-02 05:00:14.468943: I tensorflow/stream_executor/cuda/cuda_driver.cc:754] successfully created stream 0x559e330c8e60 for context 0x559ddc3b3d80 on thread
+2023-07-02 05:00:14.468957: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 2
+2023-07-02 05:00:14.468965: I tensorflow/core/common_runtime/gpu/gpu_device.cc:277] Created device_to_host_stream[0] = 0x559e330ca6b0
+2023-07-02 05:00:14.468974: I tensorflow/stream_executor/stream.cc:256] [stream=0x559e330ca980,impl=0x559e34c99d20] Called Stream::Stream(parent=0x559ddcfcbc90)
+2023-07-02 05:00:14.468979: I tensorflow/stream_executor/stream.cc:298] [stream=0x559e330ca980,impl=0x559e34c99d20] Called Stream::Init()
+2023-07-02 05:00:14.468984: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 2
+2023-07-02 05:00:14.468993: I tensorflow/stream_executor/cuda/cuda_driver.cc:754] successfully created stream 0x559ddc7d2850 for context 0x559ddc3b3d80 on thread
+2023-07-02 05:00:14.468998: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 2
+2023-07-02 05:00:14.469004: I tensorflow/core/common_runtime/gpu/gpu_device.cc:293] Created device_to_device_stream[0] = 0x559e330ca980
+2023-07-02 05:00:14.469176: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:252] found DLL info with name: /lib/x86_64-linux-gnu/libcuda.so.1
+2023-07-02 05:00:14.469199: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:257] found DLL info with resolved path: /usr/lib/x86_64-linux-gnu/libcuda.so.450.51.05
+2023-07-02 05:00:14.469208: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:106] version string "450.51.05" made value 450.51.5
+2023-07-02 05:00:14.469217: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:907] trying to read NUMA node for device ordinal: 2
+2023-07-02 05:00:14.470444: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 2
+2023-07-02 05:00:14.470457: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 2
+2023-07-02 05:00:14.470467: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 256B
+2023-07-02 05:00:14.470473: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 512B
+2023-07-02 05:00:14.470479: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 1.0KiB
+2023-07-02 05:00:14.470484: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 2.0KiB
+2023-07-02 05:00:14.470490: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 4.0KiB
+2023-07-02 05:00:14.470496: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 8.0KiB
+2023-07-02 05:00:14.470501: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 16.0KiB
+2023-07-02 05:00:14.470506: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 32.0KiB
+2023-07-02 05:00:14.470511: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 64.0KiB
+2023-07-02 05:00:14.470523: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 128.0KiB
+2023-07-02 05:00:14.470528: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 256.0KiB
+2023-07-02 05:00:14.470533: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 512.0KiB
+2023-07-02 05:00:14.470539: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 1.00MiB
+2023-07-02 05:00:14.470544: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 2.00MiB
+2023-07-02 05:00:14.470549: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 4.00MiB
+2023-07-02 05:00:14.470554: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 8.00MiB
+2023-07-02 05:00:14.470559: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 16.00MiB
+2023-07-02 05:00:14.470565: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 32.00MiB
+2023-07-02 05:00:14.470571: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 64.00MiB
+2023-07-02 05:00:14.470576: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 128.00MiB
+2023-07-02 05:00:14.470581: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 256.00MiB
+2023-07-02 05:00:14.470603: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1418] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:2 with 13506 MB memory) -> physical GPU (device: 2, name: Tesla T4, pci bus id: 0000:40:00.0, compute capability: 7.5)
+2023-07-02 05:00:14.470610: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 2
+2023-07-02 05:00:14.470620: I tensorflow/stream_executor/stream.cc:256] [stream=0x559e328cebd0,impl=0x559e328cd7f0] Called Stream::Stream(parent=0x559ddd620870)
+2023-07-02 05:00:14.470628: I tensorflow/stream_executor/stream.cc:298] [stream=0x559e328cebd0,impl=0x559e328cd7f0] Called Stream::Init()
+2023-07-02 05:00:14.470634: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 3
+2023-07-02 05:00:14.470656: I tensorflow/stream_executor/cuda/cuda_driver.cc:754] successfully created stream 0x559e328cd760 for context 0x559ddc3db100 on thread
+2023-07-02 05:00:14.470663: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 3
+2023-07-02 05:00:14.470671: I tensorflow/core/common_runtime/gpu/gpu_device.cc:253] Created stream[0] = 0x559e328cebd0 with priority: 0
+2023-07-02 05:00:14.470678: I tensorflow/stream_executor/stream.cc:256] [stream=0x559e328cec80,impl=0x559e328cd7a0] Called Stream::Stream(parent=0x559ddd620870)
+2023-07-02 05:00:14.470684: I tensorflow/stream_executor/stream.cc:298] [stream=0x559e328cec80,impl=0x559e328cd7a0] Called Stream::Init()
+2023-07-02 05:00:14.470688: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 3
+2023-07-02 05:00:14.470696: I tensorflow/stream_executor/cuda/cuda_driver.cc:754] successfully created stream 0x559e328cd740 for context 0x559ddc3db100 on thread
+2023-07-02 05:00:14.470702: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 3
+2023-07-02 05:00:14.470708: I tensorflow/core/common_runtime/gpu/gpu_device.cc:272] Created host_to_device_stream[0] = 0x559e328cec80
+2023-07-02 05:00:14.470714: I tensorflow/stream_executor/stream.cc:256] [stream=0x559e328cefd0,impl=0x559e34c99c60] Called Stream::Stream(parent=0x559ddd620870)
+2023-07-02 05:00:14.470720: I tensorflow/stream_executor/stream.cc:298] [stream=0x559e328cefd0,impl=0x559e34c99c60] Called Stream::Init()
+2023-07-02 05:00:14.470725: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 3
+2023-07-02 05:00:14.471037: I tensorflow/stream_executor/cuda/cuda_driver.cc:754] successfully created stream 0x559e328cd720 for context 0x559ddc3db100 on thread
+2023-07-02 05:00:14.471055: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 3
+2023-07-02 05:00:14.471062: I tensorflow/core/common_runtime/gpu/gpu_device.cc:277] Created device_to_host_stream[0] = 0x559e328cefd0
+2023-07-02 05:00:14.471070: I tensorflow/stream_executor/stream.cc:256] [stream=0x559e328cf2a0,impl=0x559e328cd320] Called Stream::Stream(parent=0x559ddd620870)
+2023-07-02 05:00:14.471076: I tensorflow/stream_executor/stream.cc:298] [stream=0x559e328cf2a0,impl=0x559e328cd320] Called Stream::Init()
+2023-07-02 05:00:14.471081: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 3
+2023-07-02 05:00:14.471089: I tensorflow/stream_executor/cuda/cuda_driver.cc:754] successfully created stream 0x559e328cd700 for context 0x559ddc3db100 on thread
+2023-07-02 05:00:14.471095: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 3
+2023-07-02 05:00:14.471100: I tensorflow/core/common_runtime/gpu/gpu_device.cc:293] Created device_to_device_stream[0] = 0x559e328cf2a0
+2023-07-02 05:00:14.471270: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:252] found DLL info with name: /lib/x86_64-linux-gnu/libcuda.so.1
+2023-07-02 05:00:14.471289: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:257] found DLL info with resolved path: /usr/lib/x86_64-linux-gnu/libcuda.so.450.51.05
+2023-07-02 05:00:14.471297: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:106] version string "450.51.05" made value 450.51.5
+2023-07-02 05:00:14.471306: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:907] trying to read NUMA node for device ordinal: 3
+2023-07-02 05:00:14.472272: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 3
+2023-07-02 05:00:14.472286: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 3
+2023-07-02 05:00:14.472296: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 256B
+2023-07-02 05:00:14.472301: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 512B
+2023-07-02 05:00:14.472307: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 1.0KiB
+2023-07-02 05:00:14.472312: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 2.0KiB
+2023-07-02 05:00:14.472318: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 4.0KiB
+2023-07-02 05:00:14.472323: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 8.0KiB
+2023-07-02 05:00:14.472328: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 16.0KiB
+2023-07-02 05:00:14.472333: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 32.0KiB
+2023-07-02 05:00:14.472338: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 64.0KiB
+2023-07-02 05:00:14.472345: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 128.0KiB
+2023-07-02 05:00:14.472350: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 256.0KiB
+2023-07-02 05:00:14.472355: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 512.0KiB
+2023-07-02 05:00:14.472360: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 1.00MiB
+2023-07-02 05:00:14.472365: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 2.00MiB
+2023-07-02 05:00:14.472370: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 4.00MiB
+2023-07-02 05:00:14.472375: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 8.00MiB
+2023-07-02 05:00:14.472380: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 16.00MiB
+2023-07-02 05:00:14.472385: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 32.00MiB
+2023-07-02 05:00:14.472396: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 64.00MiB
+2023-07-02 05:00:14.472401: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 128.00MiB
+2023-07-02 05:00:14.472407: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 256.00MiB
+2023-07-02 05:00:14.472427: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1418] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:3 with 5810 MB memory) -> physical GPU (device: 3, name: Tesla T4, pci bus id: 0000:41:00.0, compute capability: 7.5)
+2023-07-02 05:00:14.472435: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 3
+2023-07-02 05:00:14.472445: I tensorflow/stream_executor/stream.cc:256] [stream=0x559e330ab1e0,impl=0x559e330a9e00] Called Stream::Stream(parent=0x559dddc7f210)
+2023-07-02 05:00:14.472453: I tensorflow/stream_executor/stream.cc:298] [stream=0x559e330ab1e0,impl=0x559e330a9e00] Called Stream::Init()
+2023-07-02 05:00:14.472459: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 4
+2023-07-02 05:00:14.472483: I tensorflow/stream_executor/cuda/cuda_driver.cc:754] successfully created stream 0x559e330a9d70 for context 0x559ddc3e1700 on thread
+2023-07-02 05:00:14.472490: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 4
+2023-07-02 05:00:14.472497: I tensorflow/core/common_runtime/gpu/gpu_device.cc:253] Created stream[0] = 0x559e330ab1e0 with priority: 0
+2023-07-02 05:00:14.472505: I tensorflow/stream_executor/stream.cc:256] [stream=0x559e330ab290,impl=0x559e330a9db0] Called Stream::Stream(parent=0x559dddc7f210)
+2023-07-02 05:00:14.472511: I tensorflow/stream_executor/stream.cc:298] [stream=0x559e330ab290,impl=0x559e330a9db0] Called Stream::Init()
+2023-07-02 05:00:14.472515: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 4
+2023-07-02 05:00:14.472523: I tensorflow/stream_executor/cuda/cuda_driver.cc:754] successfully created stream 0x559e330a9d50 for context 0x559ddc3e1700 on thread
+2023-07-02 05:00:14.472529: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 4
+2023-07-02 05:00:14.472535: I tensorflow/core/common_runtime/gpu/gpu_device.cc:272] Created host_to_device_stream[0] = 0x559e330ab290
+2023-07-02 05:00:14.472542: I tensorflow/stream_executor/stream.cc:256] [stream=0x559e34e2c250,impl=0x559e328cd290] Called Stream::Stream(parent=0x559dddc7f210)
+2023-07-02 05:00:14.472548: I tensorflow/stream_executor/stream.cc:298] [stream=0x559e34e2c250,impl=0x559e328cd290] Called Stream::Init()
+2023-07-02 05:00:14.472553: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 4
+2023-07-02 05:00:14.472939: I tensorflow/stream_executor/cuda/cuda_driver.cc:754] successfully created stream 0x559e330a9d30 for context 0x559ddc3e1700 on thread
+2023-07-02 05:00:14.472954: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 4
+2023-07-02 05:00:14.472962: I tensorflow/core/common_runtime/gpu/gpu_device.cc:277] Created device_to_host_stream[0] = 0x559e34e2c250
+2023-07-02 05:00:14.472970: I tensorflow/stream_executor/stream.cc:256] [stream=0x559e34e2c520,impl=0x559e330a99e0] Called Stream::Stream(parent=0x559dddc7f210)
+2023-07-02 05:00:14.472976: I tensorflow/stream_executor/stream.cc:298] [stream=0x559e34e2c520,impl=0x559e330a99e0] Called Stream::Init()
+2023-07-02 05:00:14.472981: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 4
+2023-07-02 05:00:14.472988: I tensorflow/stream_executor/cuda/cuda_driver.cc:754] successfully created stream 0x559e328cd780 for context 0x559ddc3e1700 on thread
+2023-07-02 05:00:14.472993: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 4
+2023-07-02 05:00:14.472999: I tensorflow/core/common_runtime/gpu/gpu_device.cc:293] Created device_to_device_stream[0] = 0x559e34e2c520
+2023-07-02 05:00:14.473194: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:252] found DLL info with name: /lib/x86_64-linux-gnu/libcuda.so.1
+2023-07-02 05:00:14.473213: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:257] found DLL info with resolved path: /usr/lib/x86_64-linux-gnu/libcuda.so.450.51.05
+2023-07-02 05:00:14.473222: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:106] version string "450.51.05" made value 450.51.5
+2023-07-02 05:00:14.473231: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:907] trying to read NUMA node for device ordinal: 4
+2023-07-02 05:00:14.474476: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 4
+2023-07-02 05:00:14.474490: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 4
+2023-07-02 05:00:14.474500: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 256B
+2023-07-02 05:00:14.474505: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 512B
+2023-07-02 05:00:14.474511: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 1.0KiB
+2023-07-02 05:00:14.474516: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 2.0KiB
+2023-07-02 05:00:14.474522: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 4.0KiB
+2023-07-02 05:00:14.474527: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 8.0KiB
+2023-07-02 05:00:14.474533: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 16.0KiB
+2023-07-02 05:00:14.474538: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 32.0KiB
+2023-07-02 05:00:14.474543: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 64.0KiB
+2023-07-02 05:00:14.474549: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 128.0KiB
+2023-07-02 05:00:14.474554: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 256.0KiB
+2023-07-02 05:00:14.474559: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 512.0KiB
+2023-07-02 05:00:14.474564: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 1.00MiB
+2023-07-02 05:00:14.474569: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 2.00MiB
+2023-07-02 05:00:14.474574: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 4.00MiB
+2023-07-02 05:00:14.474579: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 8.00MiB
+2023-07-02 05:00:14.474584: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 16.00MiB
+2023-07-02 05:00:14.474589: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 32.00MiB
+2023-07-02 05:00:14.474594: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 64.00MiB
+2023-07-02 05:00:14.474601: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 128.00MiB
+2023-07-02 05:00:14.474606: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 256.00MiB
+2023-07-02 05:00:14.474627: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1418] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:4 with 13506 MB memory) -> physical GPU (device: 4, name: Tesla T4, pci bus id: 0000:b1:00.0, compute capability: 7.5)
+2023-07-02 05:00:14.474634: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 4
+2023-07-02 05:00:14.474644: I tensorflow/stream_executor/stream.cc:256] [stream=0x559e328cd3b0,impl=0x559e34e10040] Called Stream::Stream(parent=0x559dde2e0990)
+2023-07-02 05:00:14.474652: I tensorflow/stream_executor/stream.cc:298] [stream=0x559e328cd3b0,impl=0x559e34e10040] Called Stream::Init()
+2023-07-02 05:00:14.474658: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 5
+2023-07-02 05:00:14.474688: I tensorflow/stream_executor/cuda/cuda_driver.cc:754] successfully created stream 0x559e34e100c0 for context 0x559ddc3e7d00 on thread
+2023-07-02 05:00:14.474695: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 5
+2023-07-02 05:00:14.474702: I tensorflow/core/common_runtime/gpu/gpu_device.cc:253] Created stream[0] = 0x559e328cd3b0 with priority: 0
+2023-07-02 05:00:14.474710: I tensorflow/stream_executor/stream.cc:256] [stream=0x559e34e11530,impl=0x559e34e59240] Called Stream::Stream(parent=0x559dde2e0990)
+2023-07-02 05:00:14.474716: I tensorflow/stream_executor/stream.cc:298] [stream=0x559e34e11530,impl=0x559e34e59240] Called Stream::Init()
+2023-07-02 05:00:14.474720: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 5
+2023-07-02 05:00:14.474727: I tensorflow/stream_executor/cuda/cuda_driver.cc:754] successfully created stream 0x559e34e10070 for context 0x559ddc3e7d00 on thread
+2023-07-02 05:00:14.474732: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 5
+2023-07-02 05:00:14.474739: I tensorflow/core/common_runtime/gpu/gpu_device.cc:272] Created host_to_device_stream[0] = 0x559e34e11530
+2023-07-02 05:00:14.474746: I tensorflow/stream_executor/stream.cc:256] [stream=0x559e34e14100,impl=0x559e34e58f20] Called Stream::Stream(parent=0x559dde2e0990)
+2023-07-02 05:00:14.474752: I tensorflow/stream_executor/stream.cc:298] [stream=0x559e34e14100,impl=0x559e34e58f20] Called Stream::Init()
+2023-07-02 05:00:14.474756: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 5
+2023-07-02 05:00:14.475016: I tensorflow/stream_executor/cuda/cuda_driver.cc:754] successfully created stream 0x559e34e10020 for context 0x559ddc3e7d00 on thread
+2023-07-02 05:00:14.475029: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 5
+2023-07-02 05:00:14.475036: I tensorflow/core/common_runtime/gpu/gpu_device.cc:277] Created device_to_host_stream[0] = 0x559e34e14100
+2023-07-02 05:00:14.475044: I tensorflow/stream_executor/stream.cc:256] [stream=0x559e34e143d0,impl=0x559e34e10090] Called Stream::Stream(parent=0x559dde2e0990)
+2023-07-02 05:00:14.475050: I tensorflow/stream_executor/stream.cc:298] [stream=0x559e34e143d0,impl=0x559e34e10090] Called Stream::Init()
+2023-07-02 05:00:14.475055: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 5
+2023-07-02 05:00:14.475063: I tensorflow/stream_executor/cuda/cuda_driver.cc:754] successfully created stream 0x559e0ed264e0 for context 0x559ddc3e7d00 on thread
+2023-07-02 05:00:14.475068: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 5
+2023-07-02 05:00:14.475073: I tensorflow/core/common_runtime/gpu/gpu_device.cc:293] Created device_to_device_stream[0] = 0x559e34e143d0
+2023-07-02 05:00:14.475305: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:252] found DLL info with name: /lib/x86_64-linux-gnu/libcuda.so.1
+2023-07-02 05:00:14.475323: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:257] found DLL info with resolved path: /usr/lib/x86_64-linux-gnu/libcuda.so.450.51.05
+2023-07-02 05:00:14.475332: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:106] version string "450.51.05" made value 450.51.5
+2023-07-02 05:00:14.475341: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:907] trying to read NUMA node for device ordinal: 5
+2023-07-02 05:00:14.476572: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 5
+2023-07-02 05:00:14.476584: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 5
+2023-07-02 05:00:14.476595: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 256B
+2023-07-02 05:00:14.476600: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 512B
+2023-07-02 05:00:14.476606: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 1.0KiB
+2023-07-02 05:00:14.476618: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 2.0KiB
+2023-07-02 05:00:14.476623: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 4.0KiB
+2023-07-02 05:00:14.476628: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 8.0KiB
+2023-07-02 05:00:14.476633: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 16.0KiB
+2023-07-02 05:00:14.476638: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 32.0KiB
+2023-07-02 05:00:14.476645: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 64.0KiB
+2023-07-02 05:00:14.476650: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 128.0KiB
+2023-07-02 05:00:14.476655: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 256.0KiB
+2023-07-02 05:00:14.476660: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 512.0KiB
+2023-07-02 05:00:14.476667: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 1.00MiB
+2023-07-02 05:00:14.476673: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 2.00MiB
+2023-07-02 05:00:14.476678: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 4.00MiB
+2023-07-02 05:00:14.476682: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 8.00MiB
+2023-07-02 05:00:14.476687: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 16.00MiB
+2023-07-02 05:00:14.476693: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 32.00MiB
+2023-07-02 05:00:14.476698: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 64.00MiB
+2023-07-02 05:00:14.476703: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 128.00MiB
+2023-07-02 05:00:14.476709: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 256.00MiB
+2023-07-02 05:00:14.476729: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1418] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:5 with 13506 MB memory) -> physical GPU (device: 5, name: Tesla T4, pci bus id: 0000:b2:00.0, compute capability: 7.5)
+2023-07-02 05:00:14.476737: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 5
+2023-07-02 05:00:14.476746: I tensorflow/stream_executor/stream.cc:256] [stream=0x559e33086eb0,impl=0x559e33085ad0] Called Stream::Stream(parent=0x559dde94b9c0)
+2023-07-02 05:00:14.476754: I tensorflow/stream_executor/stream.cc:298] [stream=0x559e33086eb0,impl=0x559e33085ad0] Called Stream::Init()
+2023-07-02 05:00:14.476760: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 6
+2023-07-02 05:00:14.476784: I tensorflow/stream_executor/cuda/cuda_driver.cc:754] successfully created stream 0x559e33085a40 for context 0x559ddc3ee300 on thread
+2023-07-02 05:00:14.476791: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 6
+2023-07-02 05:00:14.476799: I tensorflow/core/common_runtime/gpu/gpu_device.cc:253] Created stream[0] = 0x559e33086eb0 with priority: 0
+2023-07-02 05:00:14.476806: I tensorflow/stream_executor/stream.cc:256] [stream=0x559e33086f60,impl=0x559e33085a80] Called Stream::Stream(parent=0x559dde94b9c0)
+2023-07-02 05:00:14.476811: I tensorflow/stream_executor/stream.cc:298] [stream=0x559e33086f60,impl=0x559e33085a80] Called Stream::Init()
+2023-07-02 05:00:14.476816: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 6
+2023-07-02 05:00:14.476825: I tensorflow/stream_executor/cuda/cuda_driver.cc:754] successfully created stream 0x559e33085a20 for context 0x559ddc3ee300 on thread
+2023-07-02 05:00:14.476830: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 6
+2023-07-02 05:00:14.476842: I tensorflow/core/common_runtime/gpu/gpu_device.cc:272] Created host_to_device_stream[0] = 0x559e33086f60
+2023-07-02 05:00:14.476849: I tensorflow/stream_executor/stream.cc:256] [stream=0x559e33087320,impl=0x559e328cd1a0] Called Stream::Stream(parent=0x559dde94b9c0)
+2023-07-02 05:00:14.476856: I tensorflow/stream_executor/stream.cc:298] [stream=0x559e33087320,impl=0x559e328cd1a0] Called Stream::Init()
+2023-07-02 05:00:14.476860: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 6
+2023-07-02 05:00:14.477114: I tensorflow/stream_executor/cuda/cuda_driver.cc:754] successfully created stream 0x559e33085a00 for context 0x559ddc3ee300 on thread
+2023-07-02 05:00:14.477127: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 6
+2023-07-02 05:00:14.477134: I tensorflow/core/common_runtime/gpu/gpu_device.cc:277] Created device_to_host_stream[0] = 0x559e33087320
+2023-07-02 05:00:14.477142: I tensorflow/stream_executor/stream.cc:256] [stream=0x559e330875f0,impl=0x559e33085700] Called Stream::Stream(parent=0x559dde94b9c0)
+2023-07-02 05:00:14.477148: I tensorflow/stream_executor/stream.cc:298] [stream=0x559e330875f0,impl=0x559e33085700] Called Stream::Init()
+2023-07-02 05:00:14.477152: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 6
+2023-07-02 05:00:14.477160: I tensorflow/stream_executor/cuda/cuda_driver.cc:754] successfully created stream 0x559e330859e0 for context 0x559ddc3ee300 on thread
+2023-07-02 05:00:14.477165: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 6
+2023-07-02 05:00:14.477171: I tensorflow/core/common_runtime/gpu/gpu_device.cc:293] Created device_to_device_stream[0] = 0x559e330875f0
+2023-07-02 05:00:14.477352: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:252] found DLL info with name: /lib/x86_64-linux-gnu/libcuda.so.1
+2023-07-02 05:00:14.477374: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:257] found DLL info with resolved path: /usr/lib/x86_64-linux-gnu/libcuda.so.450.51.05
+2023-07-02 05:00:14.477383: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:106] version string "450.51.05" made value 450.51.5
+2023-07-02 05:00:14.477392: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:907] trying to read NUMA node for device ordinal: 6
+2023-07-02 05:00:14.478616: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 6
+2023-07-02 05:00:14.478629: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 6
+2023-07-02 05:00:14.478639: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 256B
+2023-07-02 05:00:14.478645: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 512B
+2023-07-02 05:00:14.478651: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 1.0KiB
+2023-07-02 05:00:14.478656: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 2.0KiB
+2023-07-02 05:00:14.478662: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 4.0KiB
+2023-07-02 05:00:14.478667: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 8.0KiB
+2023-07-02 05:00:14.478672: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 16.0KiB
+2023-07-02 05:00:14.478677: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 32.0KiB
+2023-07-02 05:00:14.478682: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 64.0KiB
+2023-07-02 05:00:14.478688: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 128.0KiB
+2023-07-02 05:00:14.478694: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 256.0KiB
+2023-07-02 05:00:14.478699: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 512.0KiB
+2023-07-02 05:00:14.478709: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 1.00MiB
+2023-07-02 05:00:14.478715: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 2.00MiB
+2023-07-02 05:00:14.478720: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 4.00MiB
+2023-07-02 05:00:14.478725: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 8.00MiB
+2023-07-02 05:00:14.478730: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 16.00MiB
+2023-07-02 05:00:14.478735: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 32.00MiB
+2023-07-02 05:00:14.478741: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 64.00MiB
+2023-07-02 05:00:14.478747: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 128.00MiB
+2023-07-02 05:00:14.478752: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 256.00MiB
+2023-07-02 05:00:14.478772: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1418] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:6 with 13506 MB memory) -> physical GPU (device: 6, name: Tesla T4, pci bus id: 0000:b4:00.0, compute capability: 7.5)
+2023-07-02 05:00:14.478780: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 6
+2023-07-02 05:00:14.478790: I tensorflow/stream_executor/stream.cc:256] [stream=0x559e34c52ed0,impl=0x559e34c51b80] Called Stream::Stream(parent=0x559ddefbda80)
+2023-07-02 05:00:14.478797: I tensorflow/stream_executor/stream.cc:298] [stream=0x559e34c52ed0,impl=0x559e34c51b80] Called Stream::Init()
+2023-07-02 05:00:14.478803: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 7
+2023-07-02 05:00:14.478824: I tensorflow/stream_executor/cuda/cuda_driver.cc:754] successfully created stream 0x559e34c51af0 for context 0x559ddc3f4900 on thread
+2023-07-02 05:00:14.478830: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 7
+2023-07-02 05:00:14.478837: I tensorflow/core/common_runtime/gpu/gpu_device.cc:253] Created stream[0] = 0x559e34c52ed0 with priority: 0
+2023-07-02 05:00:14.478845: I tensorflow/stream_executor/stream.cc:256] [stream=0x559e34c52f80,impl=0x559e34c51b30] Called Stream::Stream(parent=0x559ddefbda80)
+2023-07-02 05:00:14.478851: I tensorflow/stream_executor/stream.cc:298] [stream=0x559e34c52f80,impl=0x559e34c51b30] Called Stream::Init()
+2023-07-02 05:00:14.478855: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 7
+2023-07-02 05:00:14.478862: I tensorflow/stream_executor/cuda/cuda_driver.cc:754] successfully created stream 0x559e34c51ad0 for context 0x559ddc3f4900 on thread
+2023-07-02 05:00:14.478868: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 7
+2023-07-02 05:00:14.478874: I tensorflow/core/common_runtime/gpu/gpu_device.cc:272] Created host_to_device_stream[0] = 0x559e34c52f80
+2023-07-02 05:00:14.478880: I tensorflow/stream_executor/stream.cc:256] [stream=0x559e34c53340,impl=0x559e33085670] Called Stream::Stream(parent=0x559ddefbda80)
+2023-07-02 05:00:14.478886: I tensorflow/stream_executor/stream.cc:298] [stream=0x559e34c53340,impl=0x559e33085670] Called Stream::Init()
+2023-07-02 05:00:14.478893: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 7
+2023-07-02 05:00:14.479148: I tensorflow/stream_executor/cuda/cuda_driver.cc:754] successfully created stream 0x559e34c51ab0 for context 0x559ddc3f4900 on thread
+2023-07-02 05:00:14.479160: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 7
+2023-07-02 05:00:14.479167: I tensorflow/core/common_runtime/gpu/gpu_device.cc:277] Created device_to_host_stream[0] = 0x559e34c53340
+2023-07-02 05:00:14.479175: I tensorflow/stream_executor/stream.cc:256] [stream=0x559e34c53610,impl=0x559e30bf0520] Called Stream::Stream(parent=0x559ddefbda80)
+2023-07-02 05:00:14.479193: I tensorflow/stream_executor/stream.cc:298] [stream=0x559e34c53610,impl=0x559e30bf0520] Called Stream::Init()
+2023-07-02 05:00:14.479200: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 7
+2023-07-02 05:00:14.479207: I tensorflow/stream_executor/cuda/cuda_driver.cc:754] successfully created stream 0x559e34c51a90 for context 0x559ddc3f4900 on thread
+2023-07-02 05:00:14.479212: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 7
+2023-07-02 05:00:14.479217: I tensorflow/core/common_runtime/gpu/gpu_device.cc:293] Created device_to_device_stream[0] = 0x559e34c53610
+2023-07-02 05:00:14.479374: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:252] found DLL info with name: /lib/x86_64-linux-gnu/libcuda.so.1
+2023-07-02 05:00:14.479391: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:257] found DLL info with resolved path: /usr/lib/x86_64-linux-gnu/libcuda.so.450.51.05
+2023-07-02 05:00:14.479399: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:106] version string "450.51.05" made value 450.51.5
+2023-07-02 05:00:14.479408: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:907] trying to read NUMA node for device ordinal: 7
+2023-07-02 05:00:14.480627: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 7
+2023-07-02 05:00:14.480640: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 7
+2023-07-02 05:00:14.480649: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 256B
+2023-07-02 05:00:14.480654: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 512B
+2023-07-02 05:00:14.480660: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 1.0KiB
+2023-07-02 05:00:14.480665: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 2.0KiB
+2023-07-02 05:00:14.480671: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 4.0KiB
+2023-07-02 05:00:14.480676: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 8.0KiB
+2023-07-02 05:00:14.480682: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 16.0KiB
+2023-07-02 05:00:14.480687: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 32.0KiB
+2023-07-02 05:00:14.480692: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 64.0KiB
+2023-07-02 05:00:14.480698: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 128.0KiB
+2023-07-02 05:00:14.480703: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 256.0KiB
+2023-07-02 05:00:14.480708: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 512.0KiB
+2023-07-02 05:00:14.480713: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 1.00MiB
+2023-07-02 05:00:14.480718: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 2.00MiB
+2023-07-02 05:00:14.480724: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 4.00MiB
+2023-07-02 05:00:14.480729: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 8.00MiB
+2023-07-02 05:00:14.480734: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 16.00MiB
+2023-07-02 05:00:14.480739: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 32.00MiB
+2023-07-02 05:00:14.480744: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 64.00MiB
+2023-07-02 05:00:14.480750: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 128.00MiB
+2023-07-02 05:00:14.480755: I tensorflow/core/common_runtime/bfc_allocator.cc:69] Creating bin of max chunk size 256.00MiB
+2023-07-02 05:00:14.480780: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1418] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:7 with 13506 MB memory) -> physical GPU (device: 7, name: Tesla T4, pci bus id: 0000:b5:00.0, compute capability: 7.5)
+2023-07-02 05:00:14.480788: I tensorflow/stream_executor/executor_cache.cc:91] hit in cache for device ordinal 7
+2023-07-02 05:00:14.480798: I tensorflow/stream_executor/stream.cc:256] [stream=0x559e327c0e60,impl=0x559e34abda20] Called Stream::Stream(parent=0x559ddf642280)
+2023-07-02 05:00:14.480805: I tensorflow/stream_executor/stream.cc:298] [stream=0x559e327c0e60,impl=0x559e34abda20] Called Stream::Init()
+2023-07-02 05:00:14.480811: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 8
+2023-07-02 05:00:14.480836: I tensorflow/stream_executor/cuda/cuda_driver.cc:754] successfully created stream 0x559e34abd990 for context 0x559ddc3faf00 on thread
+2023-07-02 05:00:14.480843: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 8
+2023-07-02 05:00:14.480849: I tensorflow/core/common_runtime/gpu/gpu_device.cc:253] Created stream[0] = 0x559e327c0e60 with priority: 0
+2023-07-02 05:00:14.480858: I tensorflow/stream_executor/stream.cc:256] [stream=0x559e327c0f10,impl=0x559e34abd9d0] Called Stream::Stream(parent=0x559ddf642280)
+2023-07-02 05:00:14.480864: I tensorflow/stream_executor/stream.cc:298] [stream=0x559e327c0f10,impl=0x559e34abd9d0] Called Stream::Init()
+2023-07-02 05:00:14.480868: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 8
+2023-07-02 05:00:14.480875: I tensorflow/stream_executor/cuda/cuda_driver.cc:754] successfully created stream 0x559e34abd970 for context 0x559ddc3faf00 on thread
+2023-07-02 05:00:14.480881: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 8
+2023-07-02 05:00:14.480886: I tensorflow/core/common_runtime/gpu/gpu_device.cc:272] Created host_to_device_stream[0] = 0x559e327c0f10
+2023-07-02 05:00:14.480893: I tensorflow/stream_executor/stream.cc:256] [stream=0x559e327c12d0,impl=0x559e30bf0470] Called Stream::Stream(parent=0x559ddf642280)
+2023-07-02 05:00:14.480899: I tensorflow/stream_executor/stream.cc:298] [stream=0x559e327c12d0,impl=0x559e30bf0470] Called Stream::Init()
+2023-07-02 05:00:14.480904: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 8
+2023-07-02 05:00:14.481134: I tensorflow/stream_executor/cuda/cuda_driver.cc:754] successfully created stream 0x559e34abd950 for context 0x559ddc3faf00 on thread
+2023-07-02 05:00:14.481146: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 8
+2023-07-02 05:00:14.481153: I tensorflow/core/common_runtime/gpu/gpu_device.cc:277] Created device_to_host_stream[0] = 0x559e327c12d0
+2023-07-02 05:00:14.481161: I tensorflow/stream_executor/stream.cc:256] [stream=0x559e327c15a0,impl=0x559e34abd600] Called Stream::Stream(parent=0x559ddf642280)
+2023-07-02 05:00:14.481167: I tensorflow/stream_executor/stream.cc:298] [stream=0x559e327c15a0,impl=0x559e34abd600] Called Stream::Init()
+2023-07-02 05:00:14.481172: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 8
+2023-07-02 05:00:14.481179: I tensorflow/stream_executor/cuda/cuda_driver.cc:754] successfully created stream 0x559e34abd930 for context 0x559ddc3faf00 on thread
+2023-07-02 05:00:14.481192: I tensorflow/stream_executor/cuda/cuda_driver.cc:208] ScopedActivateContext switching to 8
+2023-07-02 05:00:14.481198: I tensorflow/core/common_runtime/gpu/gpu_device.cc:293] Created device_to_device_stream[0] = 0x559e327c15a0
+2023-07-02 05:00:14.481395: I tensorflow/core/common_runtime/process_util.cc:159] Direct session inter op parallelism threads: 96
+2023-07-02 05:00:14.484706: I tensorflow/core/nccl/nccl_manager.cc:229] New NcclManager 0x559e34d51fb8
+2023-07-02 05:00:14.485552: I tensorflow/core/framework/log_memory.cc:34] __LOG_MEMORY__ MemoryLogTensorAllocation { step_id: -6 kernel_name: "Unknown" tensor { dtype: DT_INT32 shape { dim { size: 2 } dim { size: 2 } } allocation_description { requested_bytes: 16 allocated_bytes: 16 allocator_name: "cpu" allocation_id: 1 has_single_reference: true ptr: 94137940503040 } } }
+2023-07-02 05:00:14.485846: I tensorflow/core/framework/op_kernel.cc:1626] Instantiating kernel for node: {{node ZeroOut}} = ZeroOut[](dummy_input)
+2023-07-02 05:00:14.485891: I tensorflow/core/common_runtime/eager/execute.cc:733] Executing op ZeroOut in device /job:localhost/replica:0/task:0/device:CPU:0
+2023-07-02 05:00:14.485943: I tensorflow/core/framework/log_memory.cc:34] __LOG_MEMORY__ MemoryLogTensorAllocation { kernel_name: "ZeroOut" tensor { dtype: DT_INT32 shape { dim { size: 2 } dim { size: 2 } } allocation_description { requested_bytes: 16 allocated_bytes: 16 allocator_name: "cpu" allocation_id: 2 has_single_reference: true ptr: 94137949684992 } } }
+2023-07-02 05:00:14.485988: I tensorflow/core/framework/log_memory.cc:34] __LOG_MEMORY__ MemoryLogTensorDeallocation { allocation_id: 1 allocator_name: "cpu" }
+2023-07-02 05:00:14.486058: I tensorflow/core/framework/log_memory.cc:34] __LOG_MEMORY__ MemoryLogTensorDeallocation { allocation_id: 2 allocator_name: "cpu" }
+[[1 0]
+ [0 0]]
+2023-07-02 05:00:14.590428: I tensorflow/core/nccl/nccl_manager.cc:235] ~NcclManager 0x559e34d51fb8
+2023-07-02 05:00:14.594162: I tensorflow/core/common_runtime/bfc_allocator.cc:639] DeallocateRaw GPU_0_bfc 0
+2023-07-02 05:00:14.594207: I tensorflow/core/common_runtime/bfc_allocator.cc:647] tried to deallocate nullptr
+2023-07-02 05:00:14.594225: I tensorflow/core/common_runtime/bfc_allocator.cc:639] DeallocateRaw GPU_1_bfc 0
+2023-07-02 05:00:14.594230: I tensorflow/core/common_runtime/bfc_allocator.cc:647] tried to deallocate nullptr
+2023-07-02 05:00:14.594240: I tensorflow/core/common_runtime/bfc_allocator.cc:639] DeallocateRaw GPU_2_bfc 0
+2023-07-02 05:00:14.594245: I tensorflow/core/common_runtime/bfc_allocator.cc:647] tried to deallocate nullptr
+2023-07-02 05:00:14.594254: I tensorflow/core/common_runtime/bfc_allocator.cc:639] DeallocateRaw GPU_3_bfc 0
+2023-07-02 05:00:14.594258: I tensorflow/core/common_runtime/bfc_allocator.cc:647] tried to deallocate nullptr
+2023-07-02 05:00:14.594267: I tensorflow/core/common_runtime/bfc_allocator.cc:639] DeallocateRaw GPU_4_bfc 0
+2023-07-02 05:00:14.594272: I tensorflow/core/common_runtime/bfc_allocator.cc:647] tried to deallocate nullptr
+2023-07-02 05:00:14.594281: I tensorflow/core/common_runtime/bfc_allocator.cc:639] DeallocateRaw GPU_5_bfc 0
+2023-07-02 05:00:14.594285: I tensorflow/core/common_runtime/bfc_allocator.cc:647] tried to deallocate nullptr
+2023-07-02 05:00:14.594293: I tensorflow/core/common_runtime/bfc_allocator.cc:639] DeallocateRaw GPU_6_bfc 0
+2023-07-02 05:00:14.594298: I tensorflow/core/common_runtime/bfc_allocator.cc:647] tried to deallocate nullptr
+2023-07-02 05:00:14.594306: I tensorflow/core/common_runtime/bfc_allocator.cc:639] DeallocateRaw GPU_7_bfc 0
+2023-07-02 05:00:14.594310: I tensorflow/core/common_runtime/bfc_allocator.cc:647] tried to deallocate nullptr
