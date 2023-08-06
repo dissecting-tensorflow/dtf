@@ -35,6 +35,11 @@ cd dtf/custom-op
 bazel build --copt='-D_GLIBCXX_USE_CXX11_ABI=0' //zero_out:zero_out
 ```
 
+Output intermediate files
+```bash
+bazel build --copt='-D_GLIBCXX_USE_CXX11_ABI=0' --save_temps //zero_out:zero_o
+```
+
 ## Test
 ```bash
 cd dtf/custom-op
@@ -44,8 +49,10 @@ python zero_out/test.py
 ```
 
 ## Appendix
+https://www.tensorflow.org/guide/create_op#use_the_op_in_python
+> Note on gcc version >=5: gcc uses the new C++ ABI since version 5. TensorFlow 2.8 and earlier were built with gcc4 that uses the older ABI. If you are using these versions of TensorFlow and are trying to compile your op library with gcc>=5, add -D_GLIBCXX_USE_CXX11_ABI=0 to the command line to make the library compatible with the older ABI. TensorFlow 2.9+ packages are compatible with the newer ABI by default.
+
 The `--copt='-D_GLIBCXX_USE_CXX11_ABI=0'` helps resolve the following error:
 ```
 tensorflow.python.framework.errors_impl.NotFoundError: bazel-bin/zero_out/libzero_out.so: undefined symbol: _ZNK10tensorflow8OpKernel11TraceStringB5cxx11ERKNS_15OpKernelContextEb
 ```
-`-D_GLIBCXX_USE_CXX11_ABI=0` disables new C++11 ABI. For more info, please check out https://gcc.gnu.org/onlinedocs/libstdc++/manual/using_dual_abi.html
