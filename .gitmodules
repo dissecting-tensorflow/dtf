@@ -1,0 +1,4 @@
+[submodule "cuda-samples"]
+	path = cuda-samples
+	url = https://github.com/NVIDIA/cuda-samples.git
+  hexsha = 0ec4bd58e50c6d96098328d12ad86aa95dbb71f3
