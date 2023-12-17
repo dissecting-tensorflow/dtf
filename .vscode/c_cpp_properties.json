@@ -1,0 +1,23 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "/usr/local/cuda/include",
+                "/data00/home/son.nguyen/workspace/common/cpp3rdlib/tensorflow/include"
+            ],
+            "defines": [],
+            "compilerPath": "/usr/local/bin/gcc",
+            "cStandard": "c11",
+            "cppStandard": "gnu++14",
+            "intelliSenseMode": "linux-gcc-x64",
+            "browse": {
+                "path": [
+                    "/usr/local/cuda/include",
+                    "/data00/home/son.nguyen/workspace/common/cpp3rdlib/tensorflow/include"
+                ]
+            }
+        }
+    ],
+    "version": 4
+}

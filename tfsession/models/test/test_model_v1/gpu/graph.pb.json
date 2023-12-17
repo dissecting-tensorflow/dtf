@@ -1,0 +1,161 @@
+node {
+  name: "X"
+  op: "Placeholder"
+  attr {
+    key: "dtype"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "shape"
+    value {
+      shape {
+        dim {
+          size: -1
+        }
+        dim {
+          size: 5
+        }
+      }
+    }
+  }
+}
+node {
+  name: "Weight"
+  op: "Const"
+  attr {
+    key: "dtype"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "value"
+    value {
+      tensor {
+        dtype: DT_FLOAT
+        tensor_shape {
+          dim {
+            size: 5
+          }
+          dim {
+            size: 7
+          }
+        }
+        tensor_content: "\0004\232<\300p-\274a \205<\024\331\007;B\373g\274\223\323C;\346C\356\273\244]\260:m\331\263\273\205K\252;\345\013\350:\341\236\r<a%\230<\242\262\023<@n\033< Z\322:\362\275\222;\333\270\003\274\343\232\005\273\227@\367\273\2234\351\273\031>\002\273\317\"\035\272\327:\026<+\301T\274T\300\036\274\241g\216<U\210\262\272F\003\250\273\373\224\000\274!8\220<\200\032!<,-Z<\324I3\274\2547\210:"
+      }
+    }
+  }
+}
+node {
+  name: "Weight/read"
+  op: "Identity"
+  input: "Weight"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@Weight"
+      }
+    }
+  }
+}
+node {
+  name: "Bias"
+  op: "Const"
+  attr {
+    key: "dtype"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "value"
+    value {
+      tensor {
+        dtype: DT_FLOAT
+        tensor_shape {
+          dim {
+            size: 7
+          }
+        }
+        tensor_content: "\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000"
+      }
+    }
+  }
+}
+node {
+  name: "Bias/read"
+  op: "Identity"
+  input: "Bias"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@Bias"
+      }
+    }
+  }
+}
+node {
+  name: "MatMul"
+  op: "MatMul"
+  input: "X"
+  input: "Weight/read"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "transpose_a"
+    value {
+      b: false
+    }
+  }
+  attr {
+    key: "transpose_b"
+    value {
+      b: false
+    }
+  }
+}
+node {
+  name: "Add"
+  op: "Add"
+  input: "MatMul"
+  input: "Bias/read"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+}
+node {
+  name: "Sigmoid"
+  op: "Sigmoid"
+  input: "Add"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+}
+library {
+}

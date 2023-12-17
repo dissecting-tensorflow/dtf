@@ -1,0 +1,48 @@
+new_local_repository(
+    name = "cuda",
+    path = "/usr/local/cuda/include",
+    build_file_content = """
+cc_library(
+  name = "cuda",
+  hdrs = glob(["**/*.h", "**/*.hpp"]),
+  visibility = ["//visibility:public"]
+)
+"""
+)
+
+new_local_repository(
+    name = "tensorflow",
+    path = "/data00/home/son.nguyen/workspace/common/cpp3rdlib/tensorflow",
+    build_file_content = """
+cc_library(
+  name = "tensorflow",
+  srcs = glob(["lib/libtensorflow_cc.so.2", "lib/libtensorflow_cc.so.2.5.0", "lib/libtensorflow_framework.so.2", "lib/libtensorflow_framework.so.2.5.0"]),
+  hdrs = glob([
+    "**/*.h",
+    "**/*.hpp",
+    "**/*.inc",
+    "include/Eigen/**/*",
+    "include/unsupported/**/*",
+    "include/third_party/**/*"
+  ]),
+  visibility = ["//visibility:public"]
+)
+"""
+)
+
+new_local_repository(
+    name = "protobuf",
+    path = "/data00/home/son.nguyen/workspace/common/cpp3rdlib/protobuf",
+    build_file_content = """
+cc_library(
+  name = "protobuf",
+  srcs = glob(["lib/*.so"]),
+  hdrs = glob([
+    "include/**/*.h",
+    "include/**/*.hpp",
+    "include/**/*.inc"
+  ]),
+  visibility = ["//visibility:public"]
+)
+"""
+)
