@@ -134,12 +134,12 @@ int main(int argc, char** argv) {
   LOG_INFO("Input %s with shape{%d, %d}", name.c_str(), batch_size, element_size);
   std::random_device rd;  // Will be used to obtain a seed for the random number engine
   std::mt19937 gen(rd()); // Standard mersenne_twister_engine seeded with rd()
-  std::uniform_real_distribution<> dis(0.0, 1.0);
+  std::uniform_real_distribution<float> dist(0.0, 1.0);
   tensorflow::Tensor input(tensorflow::DT_FLOAT, tensorflow::TensorShape({batch_size, element_size}));
   float* p = input.flat<float>().data();
   for (int i = 0; i < batch_size; i++) {
     for (int j = 0; j < element_size; j++) {
-      *p = dis(gen);
+      *p = dist(gen);
       p++;
     }
   }
