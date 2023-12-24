@@ -174,9 +174,9 @@ int main(int argc, char** argv) {
     std::cout << "Output " << fetches[i] << ":" << std::endl;
     std::cout << tensor.DebugString() << std::endl;
     float* p = tensor.flat<float>().data();
-    for (size_t i = 0; i < tensor.dim_size(0); i++) {
+    for (int64_t i = 0; i < tensor.dim_size(0); i++) {
       std::cout << ">> ";
-      for (size_t j = 0; j < tensor.dim_size(1); j++) {
+      for (int64_t j = 0; j < tensor.dim_size(1); j++) {
         std::cout << *p++ << " ";
       }
       std::cout << std::endl;
