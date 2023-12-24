@@ -3,8 +3,9 @@
         {
             "name": "Linux",
             "includePath": [
-                "/usr/local/cuda/include",
-                "/data00/home/son.nguyen/workspace/common/cpp3rdlib/tensorflow/include"
+                "/usr/local/cuda-11.0/include",
+                "/data00/home/son.nguyen/workspace/common/tensorflow/include",
+                "/data00/home/son.nguyen/workspace/common/protobuf/include"
             ],
             "defines": [],
             "compilerPath": "/usr/local/bin/gcc",
@@ -13,8 +14,9 @@
             "intelliSenseMode": "linux-gcc-x64",
             "browse": {
                 "path": [
-                    "/usr/local/cuda/include",
-                    "/data00/home/son.nguyen/workspace/common/cpp3rdlib/tensorflow/include"
+                    "/usr/local/cuda-11.0/include",
+                    "/data00/home/son.nguyen/workspace/common/tensorflow/include",
+                    "/data00/home/son.nguyen/workspace/common/protobuf/include"
                 ]
             }
         }

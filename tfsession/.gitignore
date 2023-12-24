@@ -1,6 +1,6 @@
-bazel-bin/
-bazel-out/
-bazel-testlogs/
-bazel-tfsession/
-tensorflow/
+bazel-bin
+bazel-out
+bazel-testlogs
+bazel-tfsession
+tensorflow
 output/

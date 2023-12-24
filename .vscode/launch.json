@@ -1,0 +1,63 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "(gdb) Debug",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceRoot}/tfsession/bazel-bin/main",
+            "args": [],
+            "stopAtEntry": true,
+            "cwd": "${workspaceRoot}/tfsession",
+            "environment": [
+                {
+                    "name": "LD_LIBRARY_PATH",
+                    "value": "/usr/local/cuda-11.0/lib64:/data00/home/son.nguyen/workspace/common/cudnn/lib:/data00/home/son.nguyen/workspace/common/tensorflow/lib:/data00/home/son.nguyen/workspace/common/protobuf/lib"
+                },
+                {
+                    "name": "TF_CPP_MAX_VLOG_LEVEL",
+                    "value": "3"
+                },
+                {
+                    "name": "CUDA_VISIBLE_DEVICES",
+                    "value": "0"
+                },
+            ],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "linux": {
+                "sourceFileMap": {
+                    "/proc/self/cwd": {
+                        "editorPath": "${workspaceRoot}/tfsession",
+                        "useForBreakpoints": false
+                    }
+                }
+            },
+            "setupCommands": [
+                {
+                    "description": "Test",
+                    "text": "python import sys;sys.path.insert(0, '/data00/home/son.nguyen/workspace/tools/python');from libstdcxx.v6.printers import register_libstdcxx_printers;register_libstdcxx_printers(None)",
+                    "ignoreFailures": false
+                },
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "Set Disassembly Flavor to Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "",
+                    //Configure the search path of the code file here, such as the path where the workspace can be configured in the blade project
+                    "text": "directory ${workspaceRoot}/tfsession"
+                }
+            ]
+        }
+    ]
+}
