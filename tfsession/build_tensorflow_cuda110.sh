@@ -1,4 +1,5 @@
 # https://www.tensorflow.org/install/source
+# https://github.com/tensorflow/tensorflow/issues/48919#issuecomment-866438774
 
 # TensorFlow
 git clone -b v2.9.0 https://github.com/tensorflow/tensorflow.git
@@ -69,6 +70,21 @@ test:v2 --build_tag_filters=-benchmark-test,-no_oss,-no_gpu,-v1only
 # Build with debug symbols
 export CPLUS_INCLUDE_PATH=/usr/local/cuda-11.0/include
 bazel build --config=cuda --per_file_copt=+tensorflow.*,-tensorflow/core/kernels.*@-O0,-g --strip=never //tensorflow:libtensorflow_cc.so --verbose_failures
+
+
+############################################################################################################################
+# Error and Solution
+############################################################################################################################
+# fatal error: cuda_runtime_api.h: No such file or directory
+ERROR: /data00/home/son.nguyen/workspace/tensorflow_dev/tensorflow/tensorflow/compiler/tf2tensorrt/BUILD:66:11: Compiling tensorflow/compiler/tf2tensorrt/stub/nvinfer_stub.cc failed: (Exit 1): gcc failed: error executing command /usr/bin/gcc -U_FORTIFY_SOURCE -fstack-protector -Wall -Wunused-but-set-parameter -Wno-free-nonheap-object -fno-omit-frame-pointer -g0 -O2 '-D_FORTIFY_SOURCE=1' -DNDEBUG -ffunction-sections ... (remaining 141 arguments skipped)
+In file included from bazel-out/k8-opt/bin/external/local_config_tensorrt/_virtual_includes/tensorrt_headers/third_party/tensorrt/NvInferLegacyDims.h:53,
+                 from bazel-out/k8-opt/bin/external/local_config_tensorrt/_virtual_includes/tensorrt_headers/third_party/tensorrt/NvInfer.h:53,
+                 from tensorflow/compiler/tf2tensorrt/stub/nvinfer_stub.cc:17:
+bazel-out/k8-opt/bin/external/local_config_tensorrt/_virtual_includes/tensorrt_headers/third_party/tensorrt/NvInferRuntimeCommon.h:56:10: fatal error: cuda_runtime_api.h: No such file or directory
+ #include <cuda_runtime_api.h>
+          ^~~~~~~~~~~~~~~~~~~~
+# Solution
+export CPLUS_INCLUDE_PATH=/usr/local/cuda-11.4/include
 
 
 ############################################################################################################################
