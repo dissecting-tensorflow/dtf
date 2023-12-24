@@ -32,10 +32,26 @@ ln -sf /usr/local/cuda/include/cuda.h .
 rm -rf /data00/home/son.nguyen/workspace/common/cpp3rdlib/protobuf/BUILD
 ```
 
-# Error
-## Error 1
-```
-./main: relocation error: ./main: symbol _ZN10tensorflow8GraphDefC1Ev version tensorflow not defined in file libtensorflow_cc.so.2 with link time reference
-```
-
-### What does it mean?
+## Session Run
+2023-12-17 14:29:17.026136: I tensorflow/core/common_runtime/direct_session.cc:1720] Created 
+() -> () {
+  n4 = Const[_XlaHasReferenceVars=false, dtype=float, value=Tensor<type: float shape: [7] values: 0 0 0...>, device=GPU:0]()
+  n5 = Identity[T=float, _XlaHasReferenceVars=false, _class=["loc:@Bias"], device=GPU:0](n4)
+  n2 = Const[_XlaHasReferenceVars=false, dtype=float, value=Tensor<type: float shape: [5,7] values: [0.0188236237 -0.0105859637 0.016250791...]...>, device=GPU:0]()
+  n3 = Identity[T=float, _XlaHasReferenceVars=false, _class=["loc:@Weight"], device=GPU:0](n2)
+  n6 = _Recv[_dst="MatMul", _src="_arg_X_0_0", client_terminated=false, recv_device="/job:localhost/replica:0/task:0/device:GPU:0", send_device="/job:localhost/replica:0/task:0/device:CPU:0", send_device_incarnation=1, tensor_name="edge_13__arg_X_0_0", tensor_type=float, device=GPU:0]()
+  n7 = MatMul[T=float, _XlaHasReferenceVars=false, transpose_a=false, transpose_b=false, device=GPU:0](n6, n3)
+  n8 = Add[T=float, _XlaHasReferenceVars=false, device=GPU:0](n7, n5)
+  n9 = Sigmoid[T=float, _XlaHasReferenceVars=false, device=GPU:0](n8)
+  n10 = _Send[T=float, _dst="_retval_Sigmoid_0_0", _src="Sigmoid", client_terminated=false, recv_device="/job:localhost/replica:0/task:0/device:CPU:0", send_device="/job:localhost/replica:0/task:0/device:GPU:0", send_device_incarnation=1, tensor_name="edge_14_Sigmoid", device=GPU:0](n9)
+}
+ for /job:localhost/replica:0/task:0/device:GPU:0
+2023-12-17 14:29:17.026186: I tensorflow/core/common_runtime/direct_session.cc:1720] Created 
+(n2:float@CPU:0) -> (n4:float@CPU:0) {
+  n4 = _Recv[_dst="_retval_Sigmoid_0_0", _src="Sigmoid", client_terminated=false, recv_device="/job:localhost/replica:0/task:0/device:CPU:0", send_device="/job:localhost/replica:0/task:0/device:GPU:0", send_device_incarnation=1, tensor_name="edge_14_Sigmoid", tensor_type=float, device=CPU:0]()
+  n3 = _Send[T=float, _dst="MatMul", _src="_arg_X_0_0", client_terminated=false, recv_device="/job:localhost/replica:0/task:0/device:GPU:0", send_device="/job:localhost/replica:0/task:0/device:CPU:0", send_device_incarnation=1, tensor_name="edge_13__arg_X_0_0", device=CPU:0](n2)
+}
+ for /job:localhost/replica:0/task:0/device:CPU:0
+2023-12-17 14:29:17.026232: I tensorflow/core/common_runtime/function_utils.cc:78] Graph Initial #nodes 11 #edges 13
+2023-12-17 14:29:17.026239: I tensorflow/core/common_runtime/function_utils.cc:164] Removing list array converter
+2023-12-17 14:29:17.026262: I tensorflow/core/common_runtime/function_utils.cc:78] Graph ReCopy #nodes 11 #edges 14

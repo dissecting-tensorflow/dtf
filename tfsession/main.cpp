@@ -46,39 +46,6 @@ static int read_file(const std::string& file_name, std::string& data) {
   return 0;
 }
 
-int build_input_tensor_vector(InputTensors& input_tensors, std::vector<std::string>& fetches) {
-  std::string name = "X:0";
-  int batch_size = 3;
-  int element_size = 5;
-  LOG_INFO("input %s with shape{%d, %d}", name.c_str(), batch_size, element_size);
-  std::random_device rd;  // Will be used to obtain a seed for the random number engine
-  std::mt19937 gen(rd()); // Standard mersenne_twister_engine seeded with rd()
-  std::uniform_real_distribution<> dis(0.0, 1.0);
-  tensorflow::Tensor input(tensorflow::DT_FLOAT, tensorflow::TensorShape({batch_size, element_size}));
-  float* p = input.flat<float>().data();
-  for (int i = 0; i < batch_size; i++) {
-    for (int j = 0; j < element_size; j++) {
-      *p = dis(gen);
-      p++;
-    }
-  }
-
-  float* p2 = input.flat<float>().data();
-  for (int i = 0; i < batch_size; i++) {
-    std::cout << ">> ";
-    for (int j = 0; j < element_size; j++) {
-      std::cout << *p2++ << " ";
-    }
-    std::cout << std::endl;
-  }
-  input_tensors.emplace_back(name, input);
-
-  LOG_INFO("fetch name: Sigmoid:0");
-  fetches.push_back("Sigmoid:0");
-
-  return EXIT_CODE_0;
-}
-
 int main(int argc, char** argv) {  
   // Model name
   std::string model_name = "test_model_v1";
@@ -155,16 +122,44 @@ int main(int argc, char** argv) {
   std::cout << std::string(120, '=') << std::endl;
   std::cout << "3. Run the Session object with input tensors" << std::endl;
   std::cout << std::string(120, '=') << std::endl;
+
+  // Build input tensors
   InputTensors input_tensors;
   std::vector<std::string> fetches;
   std::vector<std::string> targets;
-  ret = build_input_tensor_vector(input_tensors, fetches);
-  if (ret != EXIT_CODE_0) {
-    LOG_ERROR("Failed to build input tensor vector! ret=%d", ret);
-    return ret;
+
+  std::string name = "X:0";
+  int batch_size = 3;
+  int element_size = 5;
+  LOG_INFO("Input %s with shape{%d, %d}", name.c_str(), batch_size, element_size);
+  std::random_device rd;  // Will be used to obtain a seed for the random number engine
+  std::mt19937 gen(rd()); // Standard mersenne_twister_engine seeded with rd()
+  std::uniform_real_distribution<> dis(0.0, 1.0);
+  tensorflow::Tensor input(tensorflow::DT_FLOAT, tensorflow::TensorShape({batch_size, element_size}));
+  float* p = input.flat<float>().data();
+  for (int i = 0; i < batch_size; i++) {
+    for (int j = 0; j < element_size; j++) {
+      *p = dis(gen);
+      p++;
+    }
   }
 
+  float* p2 = input.flat<float>().data();
+  for (int i = 0; i < batch_size; i++) {
+    std::cout << ">> ";
+    for (int j = 0; j < element_size; j++) {
+      std::cout << *p2++ << " ";
+    }
+    std::cout << std::endl;
+  }
+  input_tensors.emplace_back(name, input);
+
+  LOG_INFO("\nFetch name: Sigmoid:0\n");
+  fetches.push_back("Sigmoid:0");
+
+  // Session Run
   OutputTensors output_tensors;
+  LOG_INFO(">> Start Session Run");
   status = session->Run(input_tensors, fetches, targets, &output_tensors);
   if (!status.ok()) {
     LOG_ERROR("Session Run failed! model=%s, ret=%d, err=%s", model_name.c_str(), status.code(), status.error_message().c_str());
@@ -172,6 +167,7 @@ int main(int argc, char** argv) {
   }
   LOG_INFO("Successfully ran session! model=%s", model_name.c_str());
 
+  // Print out output tensors
   std::cout << "\n\n";
   for (size_t i = 0; i < fetches.size(); i++) {
     auto& tensor = output_tensors[i];
