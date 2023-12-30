@@ -52,6 +52,7 @@ build --action_env TF_TENSORRT_VERSION="8.2.3"
 build --action_env TF_NCCL_VERSION=""
 build --action_env TF_CUDA_PATHS="/usr/local/cuda-11.0,/data00/home/son.nguyen/workspace/common/cudnn,/data00/home/son.nguyen/workspace/common/tensorrt"
 build --action_env CUDA_TOOLKIT_PATH="/usr/local/cuda-11.0"
+build --action_env TF_TENSORRT_STATIC_PATH="/data00/home/son.nguyen/workspace/common/tensorrt"
 build --action_env TF_CUDA_COMPUTE_CAPABILITIES="7.0,7.5,8.0,8.6"
 build --action_env LD_LIBRARY_PATH="/data00/home/son.nguyen/.gvm/pkgsets/go1.19.4/global/overlay/lib"
 build:opt --copt=-Wno-sign-compare
@@ -68,7 +69,7 @@ test:v2 --build_tag_filters=-benchmark-test,-no_oss,-no_gpu,-v1only
 
 
 # Build with debug symbols
-export CPLUS_INCLUDE_PATH=/usr/local/cuda-11.0/include
+export CPLUS_INCLUDE_PATH=/data00/home/son.nguyen/workspace/common/tensorrt/include
 bazel build --config=cuda --per_file_copt=+tensorflow.*,-tensorflow/core/kernels.*@-O0,-g --strip=never //tensorflow:libtensorflow_cc.so --verbose_failures
 
 
