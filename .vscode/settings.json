@@ -91,6 +91,7 @@
     "sparse_hash_map": "cpp",
     "sparsetable": "cpp",
     "ios": "cpp",
-    "tensor": "cpp"
+    "tensor": "cpp",
+    "__bit_reference": "cpp"
   }
 }

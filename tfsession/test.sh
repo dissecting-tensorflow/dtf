@@ -9,4 +9,4 @@ echo "LD_LIBRARY_PATH:"
 echo $LD_LIBRARY_PATH | tr ':' '\n'
 export TF_CPP_MAX_VLOG_LEVEL=3
 export CUDA_VISIBLE_DEVICES=0,1,2,3
-bazel-bin/main
+bazel-bin/test

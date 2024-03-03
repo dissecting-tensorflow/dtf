@@ -73,6 +73,11 @@ export CPLUS_INCLUDE_PATH=/data00/home/son.nguyen/workspace/common/tensorrt/incl
 bazel build --config=cuda --per_file_copt=+tensorflow.*,-tensorflow/core/kernels.*@-O0,-g --strip=never //tensorflow:libtensorflow_cc.so --verbose_failures
 
 
+# Show command details
+# -s --copt="-DGOOGLE_CUDA=1"
+bazel build -s --explain=bazel.log --config=cuda --copt="-DGOOGLE_CUDA=1" --linkopt=-g --per_file_copt=+tensorflow/core/common_runtime/executor.cc,+tensorflow/core/common_runtime/gpu/gpu_device.cc,+tensorflow/stream_executor/stream.cc,+tensorflow/stream_executor/cuda/cuda_blas.cc,+tensorflow/core/framework/op_kernel.cc,+tensorflow/core/kernels/sendrecv_ops.cc,+tensorflow/core/kernels/matmul_op_real.cc@-O0,-g,-fno-inline --strip=never //tensorflow:libtensorflow_cc.so --verbose_failures
+
+
 ############################################################################################################################
 # Error and Solution
 ############################################################################################################################
@@ -108,5 +113,4 @@ rsync -avP -m --include="*/" --include "*" Eigen /data00/home/son.nguyen/workspa
 rsync -avP -m --include="*/" --include "*" unsupported /data00/home/son.nguyen/workspace/common/tensorflow/include/
 
 # solib
-rsync -avP bazel-bin/tensorflow/*.so.* /data00/home/son.nguyen/workspace/common/tensorflow/lib
-rsync -avP bazel-bin/tensorflow/*.so /data00/home/son.nguyen/workspace/common/tensorflow/lib
+rsync -avP bazel-bin/tensorflow/*.so.* /data00/home/son.nguyen/workspace/common/tensorflow/lib && rsync -avP bazel-bin/tensorflow/*.so /data00/home/son.nguyen/workspace/common/tensorflow/lib

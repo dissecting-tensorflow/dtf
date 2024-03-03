@@ -22,6 +22,14 @@
                     "value": "3"
                 },
                 {
+                    "name": "TF_DUMP_GRAPH_PREFIX",
+                    "value": "/data00/home/son.nguyen/workspace/dtf/tfsession/models/test/test_model_v1/gpu/dump"
+                },
+                {
+                    "name": "TF_GPU_DEBUG_OPS_TO_LOG",
+                    "value": "_Recv"
+                },
+                {
                     "name": "CUDA_VISIBLE_DEVICES",
                     "value": "0"
                 },

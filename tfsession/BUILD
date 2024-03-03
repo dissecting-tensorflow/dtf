@@ -14,3 +14,18 @@ cc_binary(
       "@tensorflow//:tensorflow"
     ]
 )
+
+cc_binary(
+    name = "test",
+    srcs = ["test.cpp"],
+    copts = [
+      "-Iexternal/cuda",
+      "-Iexternal/protobuf/include",
+      "-Iexternal/tensorflow/include"
+    ],
+    deps = [
+      "@cuda//:cuda",
+      "@protobuf//:protobuf",
+      "@tensorflow//:tensorflow"
+    ]
+)

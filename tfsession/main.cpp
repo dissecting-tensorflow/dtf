@@ -46,7 +46,7 @@ static int read_file(const std::string& file_name, std::string& data) {
   return 0;
 }
 
-int main(int argc, char** argv) {  
+int main(int argc, char** argv) {
   // Model name
   std::string model_name = "test_model_v1";
 
