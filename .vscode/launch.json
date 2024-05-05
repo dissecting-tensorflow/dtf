@@ -10,7 +10,7 @@
             "request": "launch",
             "program": "${workspaceRoot}/tfsession/bazel-bin/main",
             "args": [],
-            "stopAtEntry": true,
+            "stopAtEntry": false,
             "cwd": "${workspaceRoot}/tfsession",
             "environment": [
                 {
@@ -36,20 +36,21 @@
             ],
             "externalConsole": false,
             "MIMode": "gdb",
+            "miDebuggerArgs": "-x '${workspaceFolder}/gdb.conf'",
             "linux": {
                 "sourceFileMap": {
                     "/proc/self/cwd": {
-                        "editorPath": "${workspaceRoot}/tfsession",
+                        "editorPath": "${workspaceRoot}",
                         "useForBreakpoints": false
                     }
                 }
             },
             "setupCommands": [
-                {
-                    "description": "Test",
-                    "text": "python import sys;sys.path.insert(0, '/data00/home/son.nguyen/workspace/tools/python');from libstdcxx.v6.printers import register_libstdcxx_printers;register_libstdcxx_printers(None)",
-                    "ignoreFailures": false
-                },
+                // {
+                //     "description": "Test",
+                //     "text": "python import sys;sys.path.insert(0, '/data00/home/son.nguyen/workspace/tools/python');from libstdcxx.v6.printers import register_libstdcxx_printers;register_libstdcxx_printers(None)",
+                //     "ignoreFailures": false
+                // },
                 {
                     "description": "Enable pretty-printing for gdb",
                     "text": "-enable-pretty-printing",
@@ -63,7 +64,7 @@
                 {
                     "description": "",
                     //Configure the search path of the code file here, such as the path where the workspace can be configured in the blade project
-                    "text": "directory ${workspaceRoot}/tfsession"
+                    "text": "directory ${workspaceRoot}"
                 }
             ]
         }

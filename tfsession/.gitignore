@@ -4,3 +4,4 @@ bazel-testlogs
 bazel-tfsession
 tensorflow
 output/
+tfsession/models/test/test_model_v1/gpu/dump/*

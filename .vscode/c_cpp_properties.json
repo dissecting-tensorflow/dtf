@@ -3,19 +3,27 @@
         {
             "name": "Linux",
             "includePath": [
+                "/usr/include",
                 "/usr/local/cuda-11.0/include",
-                "/data00/home/son.nguyen/workspace/common/protobuf/include"
+                "/data00/home/son.nguyen/workspace/common/protobuf/include",
+                "/data00/home/son.nguyen/workspace/dtf/tensorflow"
             ],
-            "defines": [],
+            "defines": [
+                "GOOGLE_CUDA"
+            ],
             "compilerPath": "/usr/bin/gcc",
             "cStandard": "c11",
             "cppStandard": "gnu++14",
             "intelliSenseMode": "linux-gcc-x64",
             "browse": {
                 "path": [
+                    "/usr/include",
                     "/usr/local/cuda-11.0/include",
-                    "/data00/home/son.nguyen/workspace/common/protobuf/include"
-                ]
+                    "/data00/home/son.nguyen/workspace/common/protobuf/include",
+                    "/data00/home/son.nguyen/workspace/dtf/tensorflow"
+                ],
+                "databaseFilename": "${workspaceFolder}/.vscode/vc.db",
+                "limitSymbolsToIncludedHeaders": false
             }
         }
     ],
