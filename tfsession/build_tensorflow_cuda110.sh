@@ -98,6 +98,7 @@ export CPLUS_INCLUDE_PATH=/usr/local/cuda-11.4/include
 ############################################################################################################################
 # Packaging
 ############################################################################################################################
+# Sync artifacts
 # headers
 rsync -avP -m --include="*/" --include "*.h" --exclude="*" tensorflow /data00/home/son.nguyen/workspace/common/tensorflow/include
 rsync -avP -m --include="*/" --include "*.inc" --exclude="*" tensorflow /data00/home/son.nguyen/workspace/common/tensorflow/include
@@ -106,13 +107,44 @@ rsync -avP -m --include="*/" --exclude="BUILD" --exclude="*.BUILD" --exclude="LI
 
 cd bazel-out/k8-opt/bin
 rsync -avP -m --include="*/" --include "*.h" --exclude="*" tensorflow /data00/home/son.nguyen/workspace/common/tensorflow/include
+cd -
 
-cd bazel-tensorflow/external/com_google_absl
+cd bazel-tensorflow/external/com_google_absl/
 rsync -avP -m --include="*/" --include "*.h" --include "*.inc" --exclude="*" absl /data00/home/son.nguyen/workspace/common/tensorflow/include/
+rsync -avP -m --include="*/" --include "*.h" --include "*.inc" --exclude="*" absl /data00/home/son.nguyen/workspace/dtf/tensorflow
+cd -
 
-cd bazel-tensorflow/external/eigen_archive
+cd bazel-tensorflow/external/eigen_archive/
 rsync -avP -m --include="*/" --include "*" Eigen /data00/home/son.nguyen/workspace/common/tensorflow/include/
+rsync -avP -m --include="*/" --include "*" Eigen /data00/home/son.nguyen/workspace/dtf/tensorflow
 rsync -avP -m --include="*/" --include "*" unsupported /data00/home/son.nguyen/workspace/common/tensorflow/include/
+rsync -avP -m --include="*/" --include "*" unsupported /data00/home/son.nguyen/workspace/dtf/tensorflow
+cd -
+
+# For IntelliSense
+# target_dir=/data00/son.nguyen/workspace/pet_model_dev/ref
+
+cd bazel-out/k8-opt/bin
+rsync -avP -m --include="*/" --include "*.h" --exclude="*" tensorflow $target_dir
+
+rsync -avP -m --include="*/" --include "*.h" --exclude="*" third_party $target_dir
+rsync -avP -m --include="*/" --exclude="BUILD" --exclude="*.BUILD" --exclude="LICENSE" --exclude="*.bzl" third_party/eigen3 $target_dir/third_party
+
+# cd bazel-tensorflow/external/com_google_absl/
+# rsync -avP -m --include="*/" --include "*.h" --include "*.inc" --exclude="*" absl $target_dir
+
+# cd bazel-tensorflow/external/eigen_archive/
+# rsync -avP -m --include="*/" --include "*" Eigen $target_dir
+# rsync -avP -m --include="*/" --include "*" unsupported $target_dir
+
+# target_dir=/data00/son.nguyen/workspace/pet_model_dev/include/tensorflow/third_party/
+# rsync -avP -m -L --include="*/" gpus $target_dir
 
 # solib
 rsync -avP bazel-bin/tensorflow/*.so.* /data00/home/son.nguyen/workspace/common/tensorflow/lib && rsync -avP bazel-bin/tensorflow/*.so /data00/home/son.nguyen/workspace/common/tensorflow/lib
+
+if [ "$?" == "0" ]; then
+  echo "DONE"
+else
+  echo "FAILED"
+fi

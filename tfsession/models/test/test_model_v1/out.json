@@ -1,0 +1,57 @@
+node {
+  name: "longseq_attn_softsearch/transpose_5"
+  op: "Const"
+  attr {
+    key: "dtype"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "value"
+    value {
+      tensor {
+        dtype: DT_FLOAT
+        tensor_shape {
+          dim {
+            size: 2
+          }
+          dim {
+            size: 4
+          }
+          dim {
+            size: 1
+          }
+        }
+        tensor_content: "\265a|?,Hz?)\334!?\222\314\366>#\027/?\301\330\017?.Y\030>\337\302??"
+      }
+    }
+  }
+}
+node {
+  name: "Const_2"
+  op: "Const"
+  attr {
+    key: "dtype"
+    value {
+      type: DT_INT32
+    }
+  }
+  attr {
+    key: "value"
+    value {
+      tensor {
+        dtype: DT_INT32
+        tensor_shape {
+          dim {
+            size: 4
+          }
+        }
+        tensor_content: "\004\000\000\000\002\000\000\000\002\000\000\000\002\000\000\000"
+      }
+    }
+  }
+}
+versions {
+  producer: 716
+}

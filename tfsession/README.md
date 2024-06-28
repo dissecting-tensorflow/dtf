@@ -8,6 +8,16 @@ pip install tensorflow=2.5.0
 # export DEVREGION='cn'
 # .blade_tools/bpt/bpt install tensorflow:2.5.0-cuda11.4-cudnn8.1-61-86: cuda:cuda_11.4.4_470.82.01_linux: cudnn:cudnn-11.2-linux-x64-v8.1.0: --platform=x86_64-clang1101 --install-directory=/data00/home/son.nguyen/workspace/common/cpp3rdlib -y
 
+# Execution platform: @local_execution_config_platform//:platform
+# bazel-out/host/bin/tensorflow/cc/ops/functional_ops_gen_cc: /usr/lib/x86_64-linux-gnu/libstdc++.so.6: version `CXXABI_1.3.11' not found (required by /data00/son.nguyen/.cache/bazel/_bazel_son.nguyen/aebac5816d2dd195619c887a7ac9a540/execroot/org_tensorflow/bazel-out/host/bin/tensorflow/cc/ops/../../../_solib_local/_U_S_Stensorflow_Scc_Cops_Sfunctional_Uops_Ugen_Ucc___Utensorflow/libtensorflow_framework.so.2)
+
+Solution:
+cp -v /usr/lib64/libstdc++.so.6.0.25 /usr/lib/x86_64-linux-gnu/
+ln -sf /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.25 /usr/lib/x86_64-linux-gnu/libstdc++.so.6
+ls -l /usr/lib/x86_64-linux-gnu/libstdc++.so.6
+strings /usr/lib/x86_64-linux-gnu/libstdc++.so.6 | grep CXXABI_1 | sort -uV
+
+
 # protobuf
 git clone -b 3.9.2 --depth 1 git@code.byted.org:cpp3rdlib/protobuf.git /data00/home/son.nguyen/workspace/common/cpp3rdlib/
 
