@@ -115,3 +115,6 @@ convertMLIRToTensorFlow(module.get(), optimizedGraphDef);
 Note that writing the `convertTensorFlowToMLIR`, `optimizeMLIR`, and `convertMLIRToTensorFlow` functions would require a deep understanding of both TensorFlow and MLIR, as well as the ability to map operations and their semantics between the two frameworks.
 
 Original TensorFlow GraphDef -> TensorFlow Dialect + MLIR -> MLIR IR -> Analyze -> Transform/Optimize -> MLIR IR -> TensorFlow Dialect + MLIR -> Optimized TensorFlow GraphDef
+
+## Types
+https://github.com/tensorflow/tensorflow/blob/master/tensorflow/core/framework/types.proto
