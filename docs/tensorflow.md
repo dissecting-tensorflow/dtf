@@ -125,3 +125,27 @@ https://github.com/tensorflow/tensorflow/blob/master/tensorflow/core/framework/t
 import tensorflow as tf
 tf.sysconfig.get_compile_flags()
 ```
+
+# Load a solib
+```Python
+python3
+
+# Copy and paste the following code snippet into the python3 console
+import os
+import sys
+import json
+import logging
+import tensorflow.compat.v1 as tf
+
+logging.basicConfig(stream=sys.stdout, level=logging.DEBUG)
+logging.info("This is a dummy message!")
+
+logging.info("cwd {}".format(os.getcwd()))
+
+solib = "./libcustom_ops_gpu_abi0.so"
+
+logging.info("Loading solib {}".format(solib))
+
+custom_op = tf.load_op_library(solib)
+print(json.dumps(dir(custom_op), indent=2))
+```
