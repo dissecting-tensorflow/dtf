@@ -118,3 +118,10 @@ Original TensorFlow GraphDef -> TensorFlow Dialect + MLIR -> MLIR IR -> Analyze 
 
 ## Types
 https://github.com/tensorflow/tensorflow/blob/master/tensorflow/core/framework/types.proto
+
+
+# Get compile flags
+```Python
+import tensorflow as tf
+tf.sysconfig.get_compile_flags()
+```
