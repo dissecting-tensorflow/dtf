@@ -40,3 +40,10 @@ x_0, x_1 = control_flow_ops.switch(tf.constant(2), False)
 2025-02-11 06:41:12.826934: I tensorflow/stream_executor/cuda/cuda_driver.cc:250] ScopedActivateContext switching to 1
 2025-02-11 06:41:12.826989: I tensorflow/core/common_runtime/gpu/gpu_device.cc:587] GpuDevice::ComputeHelper Switch op Switch on GPU 0 stream[0]
 ```
+
+# Get build info
+```Python
+import tensorflow as tf
+build_info = tf.sysconfig.get_build_info()
+build_info
+```
