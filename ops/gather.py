@@ -29,7 +29,6 @@ tf.Tensor(
 
 output_tensor = tf.gather(params, indices=[2,1], axis=1)
 print(output_tensor)
-
 """
 Output:
 tf.Tensor(
@@ -38,3 +37,34 @@ tf.Tensor(
  [22. 21.]
  [32. 31.]], shape=(4, 2), dtype=float32)
 """
+
+output_tensor = tf.gather(params, indices=[[2,1], [1,2]], axis=1)
+print(output_tensor)
+"""
+tf.Tensor(
+[[[ 2.  1.]
+  [ 1.  2.]]
+
+ [[12. 11.]
+  [11. 12.]]
+
+ [[22. 21.]
+  [21. 22.]]
+
+ [[32. 31.]
+  [31. 32.]]], shape=(4, 2, 2), dtype=float32)
+"""
+
+# 3D params
+# shape = (3, 2, 3)
+params = tf.constant([[[0,     1.0,  2.0],
+                       [10.0, 11.0, 12.0]],
+
+                      [[20.0, 21.0, 22.0],
+                       [30.0, 31.0, 32.0]],
+
+                      [[40.0, 41.0, 42.0],
+                       [50.0, 51.0, 52.0]]])
+
+output_tensor = tf.gather(params, indices=[[1,0], [0,1]], axis=1)
+print(output_tensor)
