@@ -8,8 +8,15 @@ export LD_LIBRARY_PATH=/usr/local/cuda-11.4/lib64
 Note: tf.gather uses underlying GatherV2 op
 Executing op GatherV2 in device /job:localhost/replica:0/task:0/device:GPU:0
 
-The params may also have any shape. gather can select slices across any axis depending on the axis argument (which defaults to 0). 
-Below it is used to gather first rows, then columns from a matrix:
+Description:
+Gather slices from params along axis according to indices. (deprecated arguments).
+More generally: The output shape has the same shape as the input, with the indexed-axis replaced by the shape of the indices.
+tf.gather(
+    params, indices, validate_indices=None, axis=None, batch_dims=0, name=None
+)
+- params may also have any shape. gather can select slices across any axis depending on the axis argument (which defaults to 0). 
+- indices must be an integer tensor of any dimension
+
 """
 
 import tensorflow as tf
