@@ -222,3 +222,7 @@ TF_LIB_GTL_DEFINE_INT_TYPE(PlatformDeviceId, int32);
 // Expands to:
 // struct PlatformDeviceId_tag_ {}; typedef ::tensorflow::gtl::IntType<PlatformDeviceId_tag_, int32> PlatformDeviceId;
 ```
+
+# Search for a kernel
+Keyword: Name("OP_NAME"). For example, <br/>
+Name("Sum")

@@ -3,7 +3,7 @@ Python 2.7.16
 TensorFlow 1.15.0
 """
 
-import tensorflow.compat.v1 as tf
+import tensorflow._api.v2.compat.v1 as tf
 from tensorflow.python.framework import graph_util
 import numpy as np
 

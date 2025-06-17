@@ -45,6 +45,17 @@ tf.Tensor(
  [32. 31.]], shape=(4, 2), dtype=float32)
 """
 
+print()
+print("=" * 80)
+print("indices=[[2,1], [1,2]], axis=0")
+print("=" * 80)
+output_tensor = tf.gather(params, indices=[[2,1], [1,2]], axis=0)
+print(output_tensor)
+print("=" * 80)
+"""
+Output:
+"""
+
 output_tensor = tf.gather(params, indices=[[2,1], [1,2]], axis=1)
 print(output_tensor)
 """

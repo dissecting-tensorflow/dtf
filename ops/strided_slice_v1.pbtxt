@@ -1,0 +1,241 @@
+node {
+  name: "X"
+  op: "Placeholder"
+  attr {
+    key: "dtype"
+    value {
+      type: DT_INT32
+    }
+  }
+  attr {
+    key: "shape"
+    value {
+      shape {
+        dim {
+          size: 4
+        }
+      }
+    }
+  }
+}
+node {
+  name: "t1"
+  op: "Const"
+  attr {
+    key: "dtype"
+    value {
+      type: DT_INT32
+    }
+  }
+  attr {
+    key: "value"
+    value {
+      tensor {
+        dtype: DT_INT32
+        tensor_shape {
+          dim {
+            size: 1
+          }
+          dim {
+            size: 100
+          }
+        }
+        tensor_content: "\031\000\000\000\026\000\000\0008\000\000\000`\000\000\000\033\000\000\000\004\000\000\000\"\000\000\0003\000\000\000\016\000\000\000I\000\000\000^\000\000\000X\000\000\000*\000\000\000\031\000\000\000S\000\000\000$\000\000\000c\000\000\0001\000\000\0002\000\000\000\020\000\000\000\034\000\000\000[\000\000\000M\000\000\000F\000\000\000a\000\000\000\010\000\000\0006\000\000\000\020\000\000\000&\000\000\000]\000\000\000`\000\000\000_\000\000\000\005\000\000\000$\000\000\000\024\000\000\000\022\000\000\000\"\000\000\000\t\000\000\000T\000\000\000\036\000\000\000*\000\000\000.\000\000\000c\000\000\000\"\000\000\0000\000\000\000\035\000\000\000a\000\000\0007\000\000\000)\000\000\0003\000\000\000a\000\000\000\021\000\000\0005\000\000\0007\000\000\000M\000\000\000\022\000\000\000P\000\000\000\030\000\000\000\027\000\000\000;\000\000\0003\000\000\000&\000\000\000C\000\000\000,\000\000\000#\000\000\000J\000\000\000(\000\000\000Z\000\000\000H\000\000\000O\000\000\000C\000\000\0006\000\000\000\023\000\000\000L\000\000\0005\000\000\000\025\000\000\000\037\000\000\000\033\000\000\000=\000\000\000D\000\000\000\035\000\000\000Q\000\000\000\n\000\000\000-\000\000\000L\000\000\000b\000\000\000\t\000\000\000&\000\000\000*\000\000\000\016\000\000\000.\000\000\000=\000\000\000D\000\000\000A\000\000\000J\000\000\000$\000\000\000^\000\000\0006\000\000\000\027\000\000\000\025\000\000\000"
+      }
+    }
+  }
+}
+node {
+  name: "Const"
+  op: "Const"
+  attr {
+    key: "dtype"
+    value {
+      type: DT_INT32
+    }
+  }
+  attr {
+    key: "value"
+    value {
+      tensor {
+        dtype: DT_INT32
+        tensor_shape {
+          dim {
+            size: 1
+          }
+        }
+        int_val: 0
+      }
+    }
+  }
+}
+node {
+  name: "Min"
+  op: "Min"
+  input: "X"
+  input: "Const"
+  attr {
+    key: "T"
+    value {
+      type: DT_INT32
+    }
+  }
+  attr {
+    key: "Tidx"
+    value {
+      type: DT_INT32
+    }
+  }
+  attr {
+    key: "keep_dims"
+    value {
+      b: false
+    }
+  }
+}
+node {
+  name: "strided_slice/stack"
+  op: "Const"
+  attr {
+    key: "dtype"
+    value {
+      type: DT_INT32
+    }
+  }
+  attr {
+    key: "value"
+    value {
+      tensor {
+        dtype: DT_INT32
+        tensor_shape {
+          dim {
+            size: 2
+          }
+        }
+        tensor_content: "\000\000\000\000\000\000\000\000"
+      }
+    }
+  }
+}
+node {
+  name: "strided_slice/stack_1/0"
+  op: "Const"
+  attr {
+    key: "dtype"
+    value {
+      type: DT_INT32
+    }
+  }
+  attr {
+    key: "value"
+    value {
+      tensor {
+        dtype: DT_INT32
+        tensor_shape {
+        }
+        int_val: 0
+      }
+    }
+  }
+}
+node {
+  name: "strided_slice/stack_1"
+  op: "Pack"
+  input: "strided_slice/stack_1/0"
+  input: "Min"
+  attr {
+    key: "N"
+    value {
+      i: 2
+    }
+  }
+  attr {
+    key: "T"
+    value {
+      type: DT_INT32
+    }
+  }
+  attr {
+    key: "axis"
+    value {
+      i: 0
+    }
+  }
+}
+node {
+  name: "strided_slice/stack_2"
+  op: "Const"
+  attr {
+    key: "dtype"
+    value {
+      type: DT_INT32
+    }
+  }
+  attr {
+    key: "value"
+    value {
+      tensor {
+        dtype: DT_INT32
+        tensor_shape {
+          dim {
+            size: 2
+          }
+        }
+        tensor_content: "\001\000\000\000\001\000\000\000"
+      }
+    }
+  }
+}
+node {
+  name: "strided_slice"
+  op: "StridedSlice"
+  input: "t1"
+  input: "strided_slice/stack"
+  input: "strided_slice/stack_1"
+  input: "strided_slice/stack_2"
+  attr {
+    key: "Index"
+    value {
+      type: DT_INT32
+    }
+  }
+  attr {
+    key: "T"
+    value {
+      type: DT_INT32
+    }
+  }
+  attr {
+    key: "begin_mask"
+    value {
+      i: 3
+    }
+  }
+  attr {
+    key: "ellipsis_mask"
+    value {
+      i: 0
+    }
+  }
+  attr {
+    key: "end_mask"
+    value {
+      i: 1
+    }
+  }
+  attr {
+    key: "new_axis_mask"
+    value {
+      i: 0
+    }
+  }
+  attr {
+    key: "shrink_axis_mask"
+    value {
+      i: 0
+    }
+  }
+}
+versions {
+  producer: 716
+}
