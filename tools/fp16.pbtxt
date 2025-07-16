@@ -1,0 +1,30 @@
+node {
+  name: "Add/y"
+  op: "Const"
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+        }
+      }
+    }
+  }
+  attr {
+    key: "dtype"
+    value {
+      type: DT_BFLOAT16
+    }
+  }
+  attr {
+    key: "value"
+    value {
+      tensor {
+        dtype: DT_BFLOAT16
+        tensor_shape {
+        }
+        half_val: 13184
+      }
+    }
+  }
+}

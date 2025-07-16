@@ -1,4 +1,5 @@
 import os
+import pdb
 import tensorflow.compat.v1 as tf
 from tensorflow.python.framework import graph_util
 from google.protobuf import text_format
@@ -15,39 +16,23 @@ f = open(graph_pbtxt_path, "r")
 graph_protobuf = text_format.Parse(f.read(), tf.GraphDef())
 
 tf.disable_eager_execution()
+sess = tf.Session()
 
 # Import the graph protobuf into our new graph.
 tf.import_graph_def(graph_def=graph_protobuf, name="")
 
-# fetches = [
-#   "strided_slice_436/stack:0",
-#   "strided_slice_453/stack_1:0",
-#   "strided_slice_436/stack_2:0",
-# ]
-
-fetches = []
-gd = tf.get_default_graph().as_graph_def()
-for node in gd.node:
-  if node.op == "Const":
-    fetches.append(node.name + ":0")
+fetches = [
+  "Const:0"
+]
 
 with tf.Session() as sess:
   outputs = sess.run(fetches, feed_dict=[])
+  # print(outputs)
   for i, name in enumerate(fetches):
+    pdb.set_trace()
     value = np.array(outputs[i])
     tensor = tf.convert_to_tensor(value)
     print("{}: {}".format(name, tensor))
     print(np.array(value))
     print("")
 
-"""
-Output:
-strided_slice_436/stack:0: Tensor("Const:0", shape=(3,), dtype=int32)
-[0 0 0]
-
-strided_slice_453/stack_1:0: Tensor("Const_1:0", shape=(3,), dtype=int32)
-[0 3 0]
-
-strided_slice_436/stack_2:0: Tensor("Const_2:0", shape=(3,), dtype=int32)
-[1 1 1]
-"""

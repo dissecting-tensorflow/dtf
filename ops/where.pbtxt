@@ -1,0 +1,336 @@
+node {
+  name: "x"
+  op: "Placeholder"
+  attr {
+    key: "dtype"
+    value {
+      type: DT_BFLOAT16
+    }
+  }
+  attr {
+    key: "shape"
+    value {
+      shape {
+        dim {
+          size: -1
+        }
+      }
+    }
+  }
+}
+node {
+  name: "y"
+  op: "Placeholder"
+  attr {
+    key: "dtype"
+    value {
+      type: DT_BFLOAT16
+    }
+  }
+  attr {
+    key: "shape"
+    value {
+      shape {
+        dim {
+          size: -1
+        }
+      }
+    }
+  }
+}
+node {
+  name: "Less/y"
+  op: "Const"
+  attr {
+    key: "dtype"
+    value {
+      type: DT_BFLOAT16
+    }
+  }
+  attr {
+    key: "value"
+    value {
+      tensor {
+        dtype: DT_BFLOAT16
+        tensor_shape {
+        }
+        half_val: 0
+      }
+    }
+  }
+}
+node {
+  name: "Less"
+  op: "Less"
+  input: "y"
+  input: "Less/y"
+  attr {
+    key: "T"
+    value {
+      type: DT_BFLOAT16
+    }
+  }
+}
+node {
+  name: "ones_like/Shape"
+  op: "Shape"
+  input: "y"
+  attr {
+    key: "T"
+    value {
+      type: DT_BFLOAT16
+    }
+  }
+  attr {
+    key: "out_type"
+    value {
+      type: DT_INT32
+    }
+  }
+}
+node {
+  name: "ones_like/Const"
+  op: "Const"
+  attr {
+    key: "dtype"
+    value {
+      type: DT_BFLOAT16
+    }
+  }
+  attr {
+    key: "value"
+    value {
+      tensor {
+        dtype: DT_BFLOAT16
+        tensor_shape {
+        }
+        half_val: 16256
+      }
+    }
+  }
+}
+node {
+  name: "ones_like"
+  op: "Fill"
+  input: "ones_like/Shape"
+  input: "ones_like/Const"
+  attr {
+    key: "T"
+    value {
+      type: DT_BFLOAT16
+    }
+  }
+  attr {
+    key: "index_type"
+    value {
+      type: DT_INT32
+    }
+  }
+}
+node {
+  name: "mul/y"
+  op: "Const"
+  attr {
+    key: "dtype"
+    value {
+      type: DT_BFLOAT16
+    }
+  }
+  attr {
+    key: "value"
+    value {
+      tensor {
+        dtype: DT_BFLOAT16
+        tensor_shape {
+        }
+        half_val: 45952
+      }
+    }
+  }
+}
+node {
+  name: "mul"
+  op: "Mul"
+  input: "ones_like"
+  input: "mul/y"
+  attr {
+    key: "T"
+    value {
+      type: DT_BFLOAT16
+    }
+  }
+}
+node {
+  name: "ones_like_1/Shape"
+  op: "Shape"
+  input: "y"
+  attr {
+    key: "T"
+    value {
+      type: DT_BFLOAT16
+    }
+  }
+  attr {
+    key: "out_type"
+    value {
+      type: DT_INT32
+    }
+  }
+}
+node {
+  name: "ones_like_1/Const"
+  op: "Const"
+  attr {
+    key: "dtype"
+    value {
+      type: DT_BFLOAT16
+    }
+  }
+  attr {
+    key: "value"
+    value {
+      tensor {
+        dtype: DT_BFLOAT16
+        tensor_shape {
+        }
+        half_val: 16256
+      }
+    }
+  }
+}
+node {
+  name: "ones_like_1"
+  op: "Fill"
+  input: "ones_like_1/Shape"
+  input: "ones_like_1/Const"
+  attr {
+    key: "T"
+    value {
+      type: DT_BFLOAT16
+    }
+  }
+  attr {
+    key: "index_type"
+    value {
+      type: DT_INT32
+    }
+  }
+}
+node {
+  name: "mul_1/y"
+  op: "Const"
+  attr {
+    key: "dtype"
+    value {
+      type: DT_BFLOAT16
+    }
+  }
+  attr {
+    key: "value"
+    value {
+      tensor {
+        dtype: DT_BFLOAT16
+        tensor_shape {
+        }
+        half_val: 13184
+      }
+    }
+  }
+}
+node {
+  name: "mul_1"
+  op: "Mul"
+  input: "ones_like_1"
+  input: "mul_1/y"
+  attr {
+    key: "T"
+    value {
+      type: DT_BFLOAT16
+    }
+  }
+}
+node {
+  name: "repl_y"
+  op: "Select"
+  input: "Less"
+  input: "mul"
+  input: "mul_1"
+  attr {
+    key: "T"
+    value {
+      type: DT_BFLOAT16
+    }
+  }
+}
+node {
+  name: "Abs"
+  op: "Abs"
+  input: "y"
+  attr {
+    key: "T"
+    value {
+      type: DT_BFLOAT16
+    }
+  }
+}
+node {
+  name: "Less_1/y"
+  op: "Const"
+  attr {
+    key: "dtype"
+    value {
+      type: DT_BFLOAT16
+    }
+  }
+  attr {
+    key: "value"
+    value {
+      tensor {
+        dtype: DT_BFLOAT16
+        tensor_shape {
+        }
+        half_val: 13184
+      }
+    }
+  }
+}
+node {
+  name: "Less_1"
+  op: "Less"
+  input: "Abs"
+  input: "Less_1/y"
+  attr {
+    key: "T"
+    value {
+      type: DT_BFLOAT16
+    }
+  }
+}
+node {
+  name: "safe_y"
+  op: "Select"
+  input: "Less_1"
+  input: "repl_y"
+  input: "y"
+  attr {
+    key: "T"
+    value {
+      type: DT_BFLOAT16
+    }
+  }
+}
+node {
+  name: "out"
+  op: "RealDiv"
+  input: "x"
+  input: "safe_y"
+  attr {
+    key: "T"
+    value {
+      type: DT_BFLOAT16
+    }
+  }
+}
+versions {
+  producer: 716
+}
