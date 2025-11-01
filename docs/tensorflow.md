@@ -226,3 +226,22 @@ TF_LIB_GTL_DEFINE_INT_TYPE(PlatformDeviceId, int32);
 # Search for a kernel
 Keyword: Name("OP_NAME"). For example, <br/>
 Name("Sum")
+
+# Profiling
+```Bash
+# Replace tf profiler with xprof:
+pip install xprof
+rm -rf profiler/pilot && mkdir -p profiler/pilot
+xprof --logdir=profiler/pilot --port=6006
+
+# On BackBook
+ssh -L 6006:localhost:6006 gpudev_xx
+```
+
+# Device Placement Debugging
+```Bash
+export TF_CPP_MIN_LOG_LEVEL=0
+export TF_CPP_MAX_VLOG_LEVEL=3
+export TF_LOG_DEVICE_PLACEMENT=1
+export TF_DUMP_GRAPH_PREFIX=/path/to/tf_dump_dir
+```
