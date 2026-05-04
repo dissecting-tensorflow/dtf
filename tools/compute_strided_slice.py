@@ -23,11 +23,11 @@ tf.import_graph_def(graph_def=graph_protobuf, name="")
 gd = tf.get_default_graph().as_graph_def()
 
 for node in gd.node:
-  if node.op != "Const":
+  if node.op != "":
     continue
   # tproto = node.attr["value"].tensor
   # decoded = tf.io.decode_raw(tproto.tensor_content, out_type=tf.as_dtype(tproto.dtype), little_endian=True)
   # out = decoded.eval(session=sess)
   out = sess.run(f"{node.name}:0")
-  print(f"{node.name}: {out.shape} {out}")
+  print(f"{node.name}: shape={out.shape} values={out}")
 

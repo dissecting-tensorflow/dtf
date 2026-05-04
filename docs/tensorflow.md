@@ -245,3 +245,22 @@ export TF_CPP_MAX_VLOG_LEVEL=3
 export TF_LOG_DEVICE_PLACEMENT=1
 export TF_DUMP_GRAPH_PREFIX=/path/to/tf_dump_dir
 ```
+
+# Edge
+The edge `edge_517_cross_former_0_block_0_1/attn_1/strided_slice_15` is the output of node `cross_former_0_block_0_1/attn_1/strided_slice_15`.
+```Bash
+2025-12-02 00:50:06.446249: I tensorflow/core/common_runtime/executor.cc:764] Process node: 292 step 2 {{node cross_former_0_block_0_1/attn_1/strided_slice_15}} = StridedSlice[Index=DT_INT32, T=DT_FLOAT, _XlaHasReferenceVars=false, _byted_output_shapes=[[?,1024,384]], _output_shapes=[[?,1024,384]], _symbolic_output_shapes=[[1,51,384]], begin_mask=1, ellipsis_mask=0, end_mask=1, new_axis_mask=0, shrink_axis_mask=0, _device="/job:localhost/replica:0/task:0/device:GPU:0"](cross_former_0_block_0_1/attn_1/strided_slice_14, bias_slice/begin, cross_former_0_block_0_1/attn_1/strided_slice_7/stack_1, mix_former/mix_former_block_.1/mix_former_block_.1_attn_1/strided_slice_10/stack_2) device: /job:localhost/replica:0/task:0/device:GPU:0
+2025-12-02 00:50:06.446255: I tensorflow/core/common_runtime/gpu/gpu_device.cc:587] GpuDevice::ComputeHelper cross_former_0_block_0_1/attn_1/strided_slice_15 op StridedSlice on GPU 0 stream[0]
+2025-12-02 00:50:06.446261: I tensorflow/core/kernels/strided_slice_op.cc:113] Strided slice identity 
+2025-12-02 00:50:06.446265: I tensorflow/core/common_runtime/gpu/gpu_device.cc:617] GpuDevice::ComputeHelper scheduled cross_former_0_block_0_1/attn_1/strided_slice_15 op StridedSlice on GPU 0 stream[0]
+2025-12-02 00:50:06.446276: I tensorflow/core/common_runtime/executor.cc:764] Process node: 293 step 2 {{node cross_former_0_block_0_1/attn_1/strided_slice_15/_280}} = _Send[T=DT_FLOAT, _dst="_retval_cross_former_0_block_0_1/attn_1/strided_slice_15_0_0", _src="cross_former_0_block_0_1/attn_1/strided_slice_15", client_terminated=false, recv_device="/job:localhost/replica:0/task:0/device:CPU:0", send_device="/job:localhost/replica:0/task:0/device:GPU:0", send_device_incarnation=1, tensor_name="edge_517_cross_former_0_block_0_1/attn_1/strided_slice_15", _device="/job:localhost/replica:0/task:0/device:GPU:0"](cross_former_0_block_0_1/attn_1/strided_slice_15) device: /job:localhost/replica:0/task:0/device:GPU:0
+2025-12-02 00:50:06.446283: I tensorflow/core/common_runtime/gpu/gpu_device.cc:587] GpuDevice::ComputeHelper cross_former_0_block_0_1/attn_1/strided_slice_15/_280 op _Send on GPU 0 stream[0]
+2025-12-02 00:50:06.446289: I tensorflow/core/common_runtime/rendezvous_mgr.cc:180] IntraProcessRendezvous Send 0x96e23fb0 /job:localhost/replica:0/task:0/device:GPU:0;0000000000000001;/job:localhost/replica:0/task:0/device:CPU:0;edge_517_cross_former_0_block_0_1/attn_1/strided_slice_15;0:0
+2025-12-02 00:50:06.446298: I tensorflow/core/common_runtime/bfc_allocator.cc:310] AllocateRaw gpu_host_bfc  78336
+2025-12-02 00:50:06.446304: I tensorflow/core/common_runtime/copy_tensor.cc:211] Copy edge_517_cross_former_0_block_0_1/attn_1/strided_slice_15
+2025-12-02 00:50:06.446310: I tensorflow/core/common_runtime/gpu/gpu_util.cc:258] CopyGPUTensorToCPU
+2025-12-02 00:50:06.446318: I tensorflow/stream_executor/stream.cc:1397] [stream=0x91936450,impl=0x35ae5b70] Called Stream::ThenWaitFor(other=0x35ae0770)
+2025-12-02 00:50:06.446330: I tensorflow/stream_executor/stream.cc:4563] [stream=0x91936450,impl=0x35ae5b70] Called Stream::ThenMemcpy(host_dst=0x7fd28de00900, gpu_src=0x7fd28ebc6300, size=78336)
+2025-12-02 00:50:06.446348: I tensorflow/stream_executor/stream.cc:330] [stream=0x91936450,impl=0x35ae5b70] Called Stream::ThenRecordEvent(event=0x7fd20400cd50)
+2025-12-02 00:50:06.446366: I tensorflow/core/common_runtime/gpu/gpu_device.cc:617] GpuDevice::ComputeHelper scheduled cross_former_0_block_0_1/attn_1/strided_slice_15/_280 op _Send on GPU 0 stream[0]
+```

@@ -7,6 +7,15 @@ dtype = tf.as_dtype(dtype_enum)
 print(f"{types_pb2.DataType.Name(dtype_enum)}({dtype_enum}): {dtype.name}")
 
 """
+Common enumerators:
+
+types_pb2.DT_INVALID
+types_pb2.DT_FLOAT
+types_pb2.DT_HALF
+types_pb2.DT_BFLOAT16
+"""
+
+"""
 Output:
 DT_HALF(19): float16
 """

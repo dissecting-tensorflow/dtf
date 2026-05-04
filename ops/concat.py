@@ -24,7 +24,11 @@ t1 = [[1, 2, 3], [4, 5, 6]]
 t2 = [[7, 8, 9], [10, 11, 12]]
 
 # compute output
-output = tf.concat([t1, t2], 0, name="Concat_1")
+output1 = tf.concat([t1, t2], 0, name="Concat_1")
+
+t3 = [[1, 2], [3, 4]]
+t4 = [[7, 8, 9], [10, 11, 12]]
+output2 = tf.concat([t3, t4], 1, name="Concat_2")
 
 # launch the graph in a session
 with tf.Session() as sess:
@@ -36,7 +40,9 @@ with tf.Session() as sess:
 
   # # feed it to placeholder a via the dict 
   # print(sess.run(C, feed_dict=d))
-  print(sess.run(output, feed_dict={}))
+  outputs = sess.run([output1, output2], feed_dict={})
+  for out in outputs:
+    print(out)
 
   graph = tf.get_default_graph()
   graph_def = graph.as_graph_def()

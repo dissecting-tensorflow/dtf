@@ -1,11 +1,14 @@
 node {
-  name: "Const"
+  name: "cross_former_0_block_0_1/attn_1/strided_slice_7/stack_1"
   op: "Const"
   attr {
     key: "_output_shapes"
     value {
       list {
         shape {
+          dim {
+            size: 2
+          }
         }
       }
     }
@@ -13,21 +16,21 @@ node {
   attr {
     key: "dtype"
     value {
-      type: DT_BFLOAT16
+      type: DT_INT32
     }
   }
   attr {
     key: "value"
     value {
       tensor {
-        dtype: DT_BFLOAT16
+        dtype: DT_INT32
         tensor_shape {
+          dim {
+            size: 2
+          }
         }
-        tensor_content: "\000@"
+        tensor_content: "\000\000\000\000\000\004\000\000"
       }
     }
   }
-}
-versions {
-  producer: 716
 }
